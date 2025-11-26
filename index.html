@@ -2,188 +2,212 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <title>MS G | Portfolio 2025</title>
+  <title>MERIYA SUSAN GEORGE | Portfolio</title>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <!-- Fonts similar to the Behance style -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;800&family=Pacifico&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
+
   <!-- HERO / COVER -->
   <header class="hero">
-    <div class="container hero-inner">
-      <div>
-        <p class="tag">Portfolio 2025</p>
-        <h1>MS G</h1>
-        <p class="subtitle">
-          Embedded & Data Engineer · AI, IoT & Big Data
-        </p>
-        <p class="hero-text">
-          I design and build systems that sit at the intersection of 
-          hardware, data engineering, and AI – from ESP32-based lighting 
-          systems to Kafka–Spark pipelines and ML-powered apps.
-        </p>
+    <div class="container">
+      <div class="hero-top">
+        <span class="hero-name-small">MERIYA SUSAN GEORGE</span>
       </div>
+
+      <div class="hero-main">
+        <h1 class="hero-title">PORTFOLIO</h1>
+        <span class="hero-script">Data &amp; Analytics</span>
+      </div>
+
+      <div class="hero-line"></div>
     </div>
   </header>
 
   <main>
-    <!-- ABOUT -->
-    <section id="about" class="section">
-      <div class="container">
-        <h2>About</h2>
-        <p>
-          I’m a postgraduate student in Big Data / Embedded systems with hands-on
-          experience in hardware design, data engineering, and AI projects.
-          I enjoy turning messy real-world problems into clean, testable systems –
-          whether that means wiring up sensors to an ESP32 or wiring data through
-          Kafka, Spark, and MongoDB.
-        </p>
-      </div>
-    </section>
+    <!-- INTRO (Hello, I'm...) -->
+    <section class="intro">
+      <div class="container intro-grid">
+        <!-- Profile card -->
+        <aside class="profile-card">
+          <div class="avatar-placeholder">
+            <!-- replace with your photo later -->
+            <span>Photo</span>
+          </div>
+          <div class="profile-info">
+            <p class="profile-role">Data Engineer &amp; Data Analyst</p>
+            <p class="profile-location">📍 Ontario, Canada</p>
+          </div>
+        </aside>
 
-    <!-- SKILLS -->
-    <section id="skills" class="section section-alt">
-      <div class="container">
-        <h2>Skills & Tools</h2>
-        <div class="grid">
-          <div>
-            <h3>Embedded & Hardware</h3>
-            <ul>
-              <li>ESP32, ESP8266, ARM-based MCUs</li>
-              <li>I2C, SPI, UART, GPIO, PWM</li>
-              <li>Sensor integration (RGB, lux, RFID)</li>
-              <li>Prototyping, board bring-up, debugging</li>
-            </ul>
-          </div>
-          <div>
-            <h3>Data & AI</h3>
-            <ul>
-              <li>Python, SQL</li>
-              <li>Apache Spark, Kafka, MongoDB</li>
-              <li>Scikit-learn, NLP, ML pipelines</li>
-              <li>ETL, feature engineering, model evaluation</li>
-            </ul>
-          </div>
-          <div>
-            <h3>Tools & Platforms</h3>
-            <ul>
-              <li>Git, GitHub, Docker</li>
-              <li>VS Code, Jupyter, PlatformIO</li>
-              <li>Azure, Linux, CLI workflows</li>
-              <li>Flutter, Firebase, REST APIs</li>
-            </ul>
+        <!-- Text -->
+        <div class="intro-text">
+          <h2>Hello, I’m Meriya!</h2>
+          <p>
+            I’m a results-driven Data Engineer &amp; Analyst with around 3 years of
+            experience and a PG Diploma in AI &amp; Big Data Analytics. I enjoy
+            turning messy real-world data into clean, reliable pipelines and
+            dashboards that support business decisions.
+          </p>
+          <p>
+            I’ve worked on projects involving ETL automation, predictive modelling,
+            anomaly detection, and real-time data streaming. My toolkit includes
+            Python, SQL, Spark, Airflow, Kafka, and modern BI tools like Power BI
+            and Tableau.
+          </p>
+          <p>
+            Please take a moment to explore my portfolio below. If you’d like to
+            collaborate or have any questions, I’d love to hear from you.
+          </p>
+
+          <div class="intro-actions">
+            <a class="btn-primary" href="#projects">View my projects</a>
+            <a class="btn-ghost" href="#contact">Work with me</a>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- EXPERIENCE -->
-    <section id="experience" class="section">
-      <div class="container">
-        <h2>Experience</h2>
-        <div class="timeline">
-          <div class="timeline-item">
-            <h3>Hardware / Embedded Experience</h3>
-            <p class="meta">Board bring-up · Sensors · Debugging</p>
-            <p>
-              Worked on PCB bring-up, testing and validation for complex boards,
-              including high-speed interfaces and multi-rail power designs. Hands-on
-              debugging with scopes, logic analyzers, and firmware tests.
-            </p>
+    <!-- CONTACT + SKILLS + EDUCATION / EXPERIENCE (two-column like the 3rd slide) -->
+    <section class="details">
+      <div class="container details-grid">
+
+        <!-- LEFT COLUMN -->
+        <div>
+          <h3 class="details-heading">contact</h3>
+          <ul class="contact-list">
+            <li>📧 <a href="mailto:meriyageorgebethlem@gmail.com">meriyageorgebethlem@gmail.com</a></li>
+            <li>💼 <a href="https://www.linkedin.com/in/meriya-george/" target="_blank">linkedin.com/in/meriya-george</a></li>
+            <li>💻 <a href="https://github.com/meriwhoo" target="_blank">github.com/meriwhoo</a></li>
+          </ul>
+
+          <h3 class="details-heading">technical skills</h3>
+          <div class="skill-tags">
+            <span>Python</span>
+            <span>SQL</span>
+            <span>Spark</span>
+            <span>Airflow</span>
+            <span>Kafka</span>
+            <span>MongoDB</span>
+            <span>Power BI</span>
+            <span>Tableau</span>
           </div>
-          <div class="timeline-item">
-            <h3>Data & AI Projects</h3>
-            <p class="meta">Data pipelines · ML models · APIs</p>
-            <p>
-              Built end-to-end data workflows using Python, Spark, and Kafka —
-              from scraping and ingestion to storage in MongoDB and serving
-              ML-powered content for real applications.
-            </p>
+
+          <h3 class="details-heading">interests</h3>
+          <div class="skill-tags">
+            <span>data storytelling</span>
+            <span>dashboards</span>
+            <span>IoT</span>
+            <span>machine learning</span>
+            <span>automation</span>
           </div>
         </div>
+
+        <!-- RIGHT COLUMN -->
+        <div>
+          <h3 class="details-heading">education</h3>
+          <div class="timeline">
+            <div class="timeline-row">
+              <div class="timeline-year">2024 – now</div>
+              <div class="timeline-content">
+                <strong>PG Diploma – AI &amp; Big Data Analytics</strong><br>
+                Lambton College, Ontario
+              </div>
+            </div>
+            <div class="timeline-row">
+              <div class="timeline-year">2017 – 2021</div>
+              <div class="timeline-content">
+                <strong>Bachelor’s in Engineering</strong><br>
+                (Fill in your branch & university here)
+              </div>
+            </div>
+          </div>
+
+          <h3 class="details-heading">experience</h3>
+          <div class="timeline">
+            <div class="timeline-row">
+              <div class="timeline-year">2022 – 2023</div>
+              <div class="timeline-content">
+                <strong>System Engineer / Developer</strong><br>
+                Tata Consultancy Services (TCS)<br>
+                <span class="timeline-small">
+                  Worked with Python and SQL on data processing and ETL workflows for client projects.
+                </span>
+              </div>
+            </div>
+            <div class="timeline-row">
+              <div class="timeline-year">2023 – 2024</div>
+              <div class="timeline-content">
+                <strong>Client Executive</strong><br>
+                Voice N Cloud<br>
+                <span class="timeline-small">
+                  Managed client relationships, gathered requirements and helped map business needs to IT solutions.
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+
       </div>
     </section>
 
-    <!-- PROJECTS -->
-    <section id="projects" class="section section-alt">
+    <!-- PROJECTS (kept minimal for now) -->
+    <section id="projects" class="projects">
       <div class="container">
-        <h2>Selected Projects</h2>
+        <h2 class="section-title">Selected Projects</h2>
 
-        <!-- Project 1 -->
         <article class="project-card">
-          <h3>iBrand – AI-Powered Social Media Content Engine</h3>
-          <p class="project-meta">Data Engineering · NLP · Kafka · MongoDB</p>
+          <h3>iBrand – Real-Time Content Automation Platform</h3>
+          <p class="project-meta">Apache Kafka · Spark · Airflow · MongoDB · FastAPI · Docker</p>
           <p>
-            A platform that ingests news and social data, enriches it with NLP,
-            and generates brand-aligned social media posts.
+            <strong>Problem.</strong> Brands struggle to keep up with real-time news and social trends while
+            maintaining consistent voice and tone.
           </p>
-          <ul>
-            <li>Implemented a Kafka + Spark pipeline to stream and process news articles.</li>
-            <li>Stored enriched articles in MongoDB for fast querying and filtering.</li>
-            <li>Led team coordination, task planning, and integration across services.</li>
-          </ul>
+          <p>
+            <strong>What I did.</strong> Co-built a data pipeline that ingests articles from multiple sources,
+            streams them via Kafka, processes them with Spark, and stores enriched results in MongoDB.
+          </p>
+          <p>
+            <strong>Result.</strong> Enabled automated, brand-aligned content generation on top of clean,
+            queryable article data.
+          </p>
         </article>
 
-        <!-- Project 2 -->
         <article class="project-card">
-          <h3>Smart Mood Lighting – ESP32 + WLED + MQTT</h3>
-          <p class="project-meta">Embedded Systems · IoT · MQTT · Sensors</p>
+          <h3>AI-Driven Property Deal Finder</h3>
+          <p class="project-meta">Python · Apache Airflow · AWS · XGBoost · SHAP · FastAPI · Twilio API</p>
           <p>
-            An intelligent lighting setup using an ESP32, RGB and lux sensors, and
-            a WS2812B LED panel controlled via WLED, designed to support users
-            affected by low-light conditions.
+            <strong>Problem.</strong> Realtors needed a way to spot underpriced properties in a fast-moving
+            Canadian housing market.
           </p>
-          <ul>
-            <li>Integrated RGB (VEML6040) and light (BH1750) sensors over I2C.</li>
-            <li>Published real-time sensor data via MQTT to a Raspberry Pi.</li>
-            <li>Controlled LED brightness and color temperature using WLED presets.</li>
-          </ul>
-        </article>
-
-        <!-- Project 3 -->
-        <article class="project-card">
-          <h3>Business Card Scanner App – Flutter + ML Kit</h3>
-          <p class="project-meta">Mobile · Computer Vision · OCR</p>
           <p>
-            A Flutter app that scans business cards, extracts contact details using
-            Google ML Kit, and saves them into a structured local database.
+            <strong>What I did.</strong> Built a pipeline that scrapes and aggregates listing data, trains a
+            regression model (XGBoost) to estimate fair price, and surfaces anomalies via an API and SMS alerts.
           </p>
-          <ul>
-            <li>Integrated on-device text recognition and entity extraction.</li>
-            <li>Designed drag-and-drop UI to map OCR text into specific fields.</li>
-            <li>Implemented local storage and contact management with favorites.</li>
-          </ul>
-        </article>
-
-        <!-- Project 4 -->
-        <article class="project-card">
-          <h3>Heart Disease & Housing Price Prediction Models</h3>
-          <p class="project-meta">Machine Learning · Scikit-learn · Data Analysis</p>
           <p>
-            Built ML models on real-world datasets to predict heart disease risk and
-            housing prices, focusing on data cleaning, feature engineering, and
-            model interpretability.
+            <strong>Result.</strong> Helped identify potential deals by flagging listings priced significantly
+            below the model’s predicted value.
           </p>
-          <ul>
-            <li>Explored and cleaned datasets using pandas and NumPy.</li>
-            <li>Trained and evaluated models like Random Forest and Logistic Regression.</li>
-            <li>Visualized insights to communicate findings to non-technical audiences.</li>
-          </ul>
         </article>
       </div>
     </section>
 
     <!-- CONTACT -->
-    <section id="contact" class="section">
+    <section id="contact" class="contact">
       <div class="container">
-        <h2>Contact</h2>
+        <h2 class="section-title">Let’s connect</h2>
         <p>
-          Open to roles in Embedded Systems, Data Engineering, and AI-driven
-          products. If my work looks interesting to you, let’s talk.
+          Open to roles in Data Engineering, Analytics and AI-driven products.
+          If my work looks interesting to you, feel free to reach out.
         </p>
-        <p>
-          <strong>Email:</strong> <a href="mailto:youremail@example.com">youremail@example.com</a><br />
-          <strong>LinkedIn:</strong> <a href="https://linkedin.com/in/your-profile" target="_blank">linkedin.com/in/your-profile</a><br />
-          <strong>GitHub:</strong> <a href="https://github.com/your-username" target="_blank">github.com/your-username</a>
+        <p class="contact-links">
+          <a href="mailto:meriyageorgebethlem@gmail.com">meriyageorgebethlem@gmail.com</a> ·
+          <a href="https://www.linkedin.com/in/meriya-george/" target="_blank">LinkedIn</a> ·
+          <a href="https://github.com/meriwhoo" target="_blank">GitHub</a>
         </p>
       </div>
     </section>
