@@ -14,11 +14,9 @@
   <div class="page-bg"></div>
 
   <div class="page">
-    <!-- TOP HERO -->
     <header class="hero container">
       <div class="hero-left">
         <div class="photo-card">
-          <!-- replace placeholder.png with your real photo when ready -->
           <img src="placeholder.png" alt="Meriya Susan George" class="hero-photo" />
           <div class="photo-meta">
             <p class="photo-role">Data Engineer · Data Analyst</p>
@@ -27,16 +25,17 @@
         </div>
       </div>
 
+      <!-- Right: big heading + intro -->
       <div class="hero-right">
         <h1 class="hero-title">Hello, I’m Meriya!</h1>
         <p class="hero-body">
-          I’m a results-driven data professional with ~3 years of experience building ETL pipelines,
-          real-time data workflows and decision-ready dashboards using Python, SQL, Spark, Airflow
-          and modern BI tools like Power BI and Tableau.
+          I’m a results-driven data professional with around 3 years of experience building ETL
+          pipelines, real-time data workflows and decision-ready dashboards using Python, SQL, Spark,
+          Airflow and BI tools like Power BI and Tableau.
         </p>
         <p class="hero-body">
-          I enjoy turning messy real-world data into clean systems and clear stories that help teams
-          move faster and make better decisions.
+          I love turning messy real-world data into clean systems and clear stories that help teams move
+          faster and make better decisions.
         </p>
 
         <div class="hero-actions">
@@ -46,9 +45,9 @@
       </div>
     </header>
 
-    <!-- LOWER GRID: LEFT INFO + RIGHT SCROLLABLE PROJECTS -->
+    <!-- LOWER GRID: left info, right projects -->
     <main class="lower container">
-      <!-- LEFT COLUMN -->
+      <!-- LEFT COLUMN: contact + skills + interests -->
       <section class="col-left">
         <div class="section-block">
           <h2 class="section-heading">contact</h2>
@@ -85,42 +84,97 @@
         </div>
       </section>
 
-      <!-- RIGHT COLUMN: SCROLLABLE PROJECTS PANEL -->
+      <!-- RIGHT COLUMN: PROJECTS -->
       <section class="col-right" id="projects">
-        <h2 class="section-heading main">selected projects</h2>
-        <p class="projects-intro">
-          A few projects where I’ve applied data engineering, analytics and ML to solve real problems.
-        </p>
+        <div class="projects-header-row">
+          <div>
+            <h2 class="section-heading main">selected projects</h2>
+            <p class="projects-intro">
+              A few projects where I’ve applied data engineering, analytics and ML to solve real problems.
+              Use the tabs or arrows to browse.
+            </p>
+          </div>
+          <!-- Tabs per project -->
+          <div class="project-tabs">
+            <button class="project-tab active" data-index="0">iBrand</button>
+            <button class="project-tab" data-index="1">AI Property Deal Finder</button>
+          </div>
+        </div>
 
-        <!-- Scrollable area -->
-        <div class="projects-scroll">
-          <!-- PROJECT 1 -->
-          <article class="project-card">
-            <h3>iBrand – Real-Time Content Automation Platform</h3>
-            <p class="project-meta">Kafka · Spark · Airflow · MongoDB · FastAPI · Docker</p>
-            <p><strong>Problem.</strong> Brands struggle to keep up with real-time news and social trends while maintaining a consistent tone of voice.</p>
-            <p><strong>What I did.</strong> Co-designed a pipeline that ingests articles from multiple news and social sources, streams the data via Kafka, processes it with Spark, enriches it with NLP signals and stores it in MongoDB for fast querying.</p>
-            <p><strong>Result.</strong> Enabled automated, brand-aligned social content generation on top of clean, queryable article data, reducing manual research time.</p>
-          </article>
+        <!-- Carousel in the old education/experience area -->
+        <div class="projects-carousel">
+          <button class="carousel-arrow prev" aria-label="Previous project">‹</button>
 
-          <!-- PROJECT 2 -->
-          <article class="project-card">
-            <h3>AI-Driven Property Deal Finder</h3>
-            <p class="project-meta">Python · Airflow · AWS · XGBoost · SHAP · FastAPI · Twilio</p>
-            <p><strong>Problem.</strong> Realtors needed a way to identify under-priced properties in a fast-moving Canadian housing market.</p>
-            <p><strong>What I did.</strong> Built a workflow that aggregates listing data, trains an XGBoost model to estimate fair price, explains behaviour with SHAP, and sends SMS alerts via Twilio when listings look significantly under-valued.</p>
-            <p><strong>Result.</strong> Helped identify potential deals by flagging listings priced well below model predictions, giving realtors a focused shortlist.</p>
-          </article>
+          <div class="carousel-viewport">
+            <div class="carousel-track">
+              <!-- Slide 1: iBrand -->
+              <article class="project-card">
+                <h3>iBrand – Real-Time Content Automation Platform</h3>
+                <p class="project-meta">Kafka · Spark · Airflow · MongoDB · FastAPI · Docker</p>
+                <p>
+                  <strong>Problem.</strong> Brands struggle to keep up with real-time news and social trends
+                  while maintaining a consistent tone of voice.
+                </p>
+                <p>
+                  <strong>What I did.</strong> Co-designed a pipeline that ingests articles from multiple news
+                  and social sources, streams the data via Kafka, processes it with Spark, enriches it with NLP
+                  signals and stores it in MongoDB for fast querying.
+                </p>
+                <p>
+                  <strong>Result.</strong> Enabled automated, brand-aligned social content generation on top
+                  of clean, queryable article data, reducing manual research time for marketers.
+                </p>
+              </article>
 
-          <!-- PROJECT 3 (placeholder for future) -->
-          <article class="project-card">
-            <h3>Next project coming soon</h3>
-            <p class="project-meta">Data · Analytics · Experimentation</p>
-            <p>This slot is reserved for your next project. Add more <code>&lt;article class="project-card"&gt;</code> blocks here as your portfolio grows — this panel will stay scrollable even if you add many projects.</p>
-          </article>
+              <!-- Slide 2: AI Property Deal Finder -->
+              <article class="project-card">
+                <h3>AI-Driven Property Deal Finder</h3>
+                <p class="project-meta">Python · Airflow · AWS · XGBoost · SHAP · FastAPI · Twilio</p>
+                <p>
+                  <strong>Problem.</strong> Realtors needed a way to identify under-priced properties in a
+                  fast-moving Canadian housing market.
+                </p>
+                <p>
+                  <strong>What I did.</strong> Built a workflow that aggregates listing data, trains an
+                  XGBoost model to estimate fair price, explains behaviour with SHAP and sends SMS alerts via
+                  Twilio when listings look significantly under-valued.
+                </p>
+                <p>
+                  <strong>Result.</strong> Helped identify potential deals by flagging listings priced well
+                  below model predictions, giving realtors a focused shortlist.
+                </p>
+              </article>
+            </div>
+          </div>
+
+          <button class="carousel-arrow next" aria-label="Next project">›</button>
         </div>
       </section>
     </main>
   </div>
+
+  <!-- Simple JS for tabs + infinite carousel -->
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      const track = document.querySelector(".carousel-track");
+      const slides = Array.from(track.children);
+      const prevBtn = document.querySelector(".carousel-arrow.prev");
+      const nextBtn = document.querySelector(".carousel-arrow.next");
+      const tabs = Array.from(document.querySelectorAll(".project-tab"));
+
+      let currentIndex = 0;
+
+      function goToSlide(index) {
+        if (!slides.length) return;
+        currentIndex = (index + slides.length) % slides.length; // wrap for infinite loop
+        track.style.transform = `translateX(-${currentIndex * 100}%)`;
+        tabs.forEach((tab, i) => tab.classList.toggle("active", i === currentIndex));
+      }
+
+      prevBtn.addEventListener("click", () => goToSlide(currentIndex - 1));
+      nextBtn.addEventListener("click", () => goToSlide(currentIndex + 1));
+      tabs.forEach((tab, i) => tab.addEventListener("click", () => goToSlide(i)));
+    });
+  </script>
 </body>
 </html>
