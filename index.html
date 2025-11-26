@@ -4,64 +4,57 @@
   <meta charset="UTF-8" />
   <title>MERIYA SUSAN GEORGE | Portfolio</title>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <!-- Fonts similar to the Behance style -->
+  <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;800&family=Pacifico&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;800&family=Pacifico&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
 
-  <!-- HERO / COVER -->
+  <!-- HERO -->
   <header class="hero">
-    <div class="container">
-      <div class="hero-top">
-        <span class="hero-name-small">MERIYA SUSAN GEORGE</span>
-      </div>
-
-      <div class="hero-main">
-        <h1 class="hero-title">PORTFOLIO</h1>
-        <span class="hero-script">Data &amp; Analytics</span>
-      </div>
-
+    <div class="container hero-inner">
+      <!-- Big name bar -->
+      <h1 class="hero-name">MERIYA SUSAN GEORGE</h1>
+      <p class="hero-tagline">Data Engineer · Data Analyst</p>
       <div class="hero-line"></div>
     </div>
   </header>
 
   <main>
-    <!-- INTRO (Hello, I'm...) -->
+    <!-- INTRO -->
     <section class="intro">
       <div class="container intro-grid">
+
         <!-- Profile card -->
         <aside class="profile-card">
-          <div class="avatar-placeholder">
-            <!-- replace with your photo later -->
-            <span>Photo</span>
+          <div class="avatar-wrapper">
+            <!-- Replace placeholder.png with your actual image filename -->
+            <img src="placeholder.png" alt="Meriya Susan George" class="avatar-img" />
           </div>
           <div class="profile-info">
-            <p class="profile-role">Data Engineer &amp; Data Analyst</p>
+            <p class="profile-role">Data Engineer | Data Analyst</p>
             <p class="profile-location">📍 Ontario, Canada</p>
           </div>
         </aside>
 
-        <!-- Text -->
+        <!-- Intro text -->
         <div class="intro-text">
           <h2>Hello, I’m Meriya!</h2>
           <p>
-            I’m a results-driven Data Engineer &amp; Analyst with around 3 years of
-            experience and a PG Diploma in AI &amp; Big Data Analytics. I enjoy
-            turning messy real-world data into clean, reliable pipelines and
-            dashboards that support business decisions.
+            I’m a results-driven Data Engineer & Analyst with around 3 years of experience and a PG Diploma
+            in AI & Big Data Analytics. I enjoy turning messy real-world data into clean, reliable pipelines
+            and dashboards that support business decisions.
           </p>
           <p>
-            I’ve worked on projects involving ETL automation, predictive modelling,
-            anomaly detection, and real-time data streaming. My toolkit includes
-            Python, SQL, Spark, Airflow, Kafka, and modern BI tools like Power BI
-            and Tableau.
+            I’ve worked on projects involving ETL automation, predictive modelling, anomaly detection, and
+            real-time data streaming. My toolkit includes Python, SQL, Spark, Airflow, Kafka, and modern BI
+            tools like Power BI and Tableau.
           </p>
           <p>
-            Please take a moment to explore my portfolio below. If you’d like to
-            collaborate or have any questions, I’d love to hear from you.
+            Please take a moment to explore my portfolio below. If you’d like to collaborate or have any
+            questions, I’d love to hear from you.
           </p>
 
           <div class="intro-actions">
@@ -72,24 +65,17 @@
       </div>
     </section>
 
-    <!-- CONTACT + SKILLS + EDUCATION / EXPERIENCE (two-column like the 3rd slide) -->
+    <!-- CONTACT + SKILLS + EXPERIENCE / EDUCATION -->
     <section class="details">
       <div class="container details-grid">
 
-        <!-- LEFT COLUMN -->
+        <!-- LEFT COLUMN: skills + interests -->
         <div>
-          <h3 class="details-heading">contact</h3>
-          <ul class="contact-list">
-            <li>📧 <a href="mailto:meriyageorgebethlem@gmail.com">meriyageorgebethlem@gmail.com</a></li>
-            <li>💼 <a href="https://www.linkedin.com/in/meriya-george/" target="_blank">linkedin.com/in/meriya-george</a></li>
-            <li>💻 <a href="https://github.com/meriwhoo" target="_blank">github.com/meriwhoo</a></li>
-          </ul>
-
           <h3 class="details-heading">technical skills</h3>
-          <div class="skill-tags">
+          <div class="chip-row">
             <span>Python</span>
             <span>SQL</span>
-            <span>Spark</span>
+            <span>Apache Spark</span>
             <span>Airflow</span>
             <span>Kafka</span>
             <span>MongoDB</span>
@@ -98,7 +84,7 @@
           </div>
 
           <h3 class="details-heading">interests</h3>
-          <div class="skill-tags">
+          <div class="chip-row">
             <span>data storytelling</span>
             <span>dashboards</span>
             <span>IoT</span>
@@ -107,46 +93,46 @@
           </div>
         </div>
 
-        <!-- RIGHT COLUMN -->
+        <!-- RIGHT COLUMN: EXPERIENCE + EDUCATION -->
         <div>
+          <h3 class="details-heading">experience</h3>
+          <div class="timeline">
+            <div class="timeline-row">
+              <div class="timeline-year">AUG 2021 – APR 2024</div>
+              <div class="timeline-content">
+                <strong>System Engineer / Developer</strong><br>
+                Tata Consultancy Services (TCS)<br>
+                <span class="timeline-small">
+                  Worked with Python and SQL on data processing pipelines and ETL workflows for client projects.
+                </span>
+              </div>
+            </div>
+            <div class="timeline-row">
+              <div class="timeline-year">MAY 2024 – SEP 2024</div>
+              <div class="timeline-content">
+                <strong>Client Executive</strong><br>
+                Voice N Cloud<br>
+                <span class="timeline-small">
+                  Managed client relationships, gathered requirements and helped map business needs to IT and cloud solutions.
+                </span>
+              </div>
+            </div>
+          </div>
+
           <h3 class="details-heading">education</h3>
           <div class="timeline">
             <div class="timeline-row">
-              <div class="timeline-year">2024 – now</div>
+              <div class="timeline-year">MAY 2024 – DEC 2025</div>
               <div class="timeline-content">
                 <strong>PG Diploma – AI &amp; Big Data Analytics</strong><br>
                 Lambton College, Ontario
               </div>
             </div>
             <div class="timeline-row">
-              <div class="timeline-year">2017 – 2021</div>
+              <div class="timeline-year">AUG 2017 – MAY 2021</div>
               <div class="timeline-content">
-                <strong>Bachelor’s in Engineering</strong><br>
-                (Fill in your branch & university here)
-              </div>
-            </div>
-          </div>
-
-          <h3 class="details-heading">experience</h3>
-          <div class="timeline">
-            <div class="timeline-row">
-              <div class="timeline-year">2022 – 2023</div>
-              <div class="timeline-content">
-                <strong>System Engineer / Developer</strong><br>
-                Tata Consultancy Services (TCS)<br>
-                <span class="timeline-small">
-                  Worked with Python and SQL on data processing and ETL workflows for client projects.
-                </span>
-              </div>
-            </div>
-            <div class="timeline-row">
-              <div class="timeline-year">2023 – 2024</div>
-              <div class="timeline-content">
-                <strong>Client Executive</strong><br>
-                Voice N Cloud<br>
-                <span class="timeline-small">
-                  Managed client relationships, gathered requirements and helped map business needs to IT solutions.
-                </span>
+                <strong>Bachelor’s in Electronics and Communication Engineering</strong><br>
+                TKM College of Engineering, Kerala
               </div>
             </div>
           </div>
@@ -155,7 +141,7 @@
       </div>
     </section>
 
-    <!-- PROJECTS (kept minimal for now) -->
+    <!-- PROJECTS -->
     <section id="projects" class="projects">
       <div class="container">
         <h2 class="section-title">Selected Projects</h2>
@@ -179,14 +165,14 @@
 
         <article class="project-card">
           <h3>AI-Driven Property Deal Finder</h3>
-          <p class="project-meta">Python · Apache Airflow · AWS · XGBoost · SHAP · FastAPI · Twilio API</p>
+          <p class="project-meta">Python · Airflow · AWS · XGBoost · SHAP · FastAPI · Twilio API</p>
           <p>
             <strong>Problem.</strong> Realtors needed a way to spot underpriced properties in a fast-moving
             Canadian housing market.
           </p>
           <p>
-            <strong>What I did.</strong> Built a pipeline that scrapes and aggregates listing data, trains a
-            regression model (XGBoost) to estimate fair price, and surfaces anomalies via an API and SMS alerts.
+            <strong>What I did.</strong> Built a workflow that aggregates listing data, trains a regression
+            model (XGBoost) to estimate fair price, and exposes alerts via an API and SMS notifications.
           </p>
           <p>
             <strong>Result.</strong> Helped identify potential deals by flagging listings priced significantly
@@ -196,18 +182,18 @@
       </div>
     </section>
 
-    <!-- CONTACT -->
+    <!-- CONTACT FOOTER -->
     <section id="contact" class="contact">
       <div class="container">
         <h2 class="section-title">Let’s connect</h2>
         <p>
-          Open to roles in Data Engineering, Analytics and AI-driven products.
-          If my work looks interesting to you, feel free to reach out.
+          Open to roles in Data Engineering, Analytics and AI-driven products. If my work looks interesting
+          to you, feel free to reach out.
         </p>
         <p class="contact-links">
-          <a href="mailto:meriyageorgebethlem@gmail.com">meriyageorgebethlem@gmail.com</a> ·
-          <a href="https://www.linkedin.com/in/meriya-george/" target="_blank">LinkedIn</a> ·
-          <a href="https://github.com/meriwhoo" target="_blank">GitHub</a>
+          📧 <a href="mailto:meriyageorgebethlem@gmail.com">meriyageorgebethlem@gmail.com</a> ·
+          💼 <a href="https://www.linkedin.com/in/meriya-george/" target="_blank">LinkedIn</a> ·
+          💻 <a href="https://github.com/meriwhoo" target="_blank">github.com/meriwhoo</a>
         </p>
       </div>
     </section>
