@@ -2,53 +2,76 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <title>Meriya Susan George | Portfolio</title>
+  <title>MERIYA SUSAN GEORGE | Portfolio</title>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;800&family=Pacifico&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-  <div class="page-bg"></div>
 
-  <main class="layout container">
-    <!-- LEFT: NON-SCROLLABLE PROFILE CARD (sticky on desktop) -->
-    <aside class="profile-panel">
-      <div class="profile-inner">
-        <!-- Photo -->
-        <div class="avatar-wrapper">
-          <!-- Put your real photo file here instead of placeholder.png -->
-          <img src="placeholder.png" alt="Meriya Susan George" class="avatar-img" />
+  <!-- HERO -->
+  <header class="hero">
+    <div class="container hero-inner">
+      <!-- Big name bar -->
+      <h1 class="hero-name">MERIYA SUSAN GEORGE</h1>
+      <p class="hero-tagline">Data Engineer · Data Analyst</p>
+      <div class="hero-line"></div>
+    </div>
+  </header>
+
+  <main>
+    <!-- INTRO -->
+    <section class="intro">
+      <div class="container intro-grid">
+
+        <!-- Profile card -->
+        <aside class="profile-card">
+          <div class="avatar-wrapper">
+            <!-- Replace placeholder.png with your actual image filename -->
+            <img src="placeholder.png" alt="Meriya Susan George" class="avatar-img" />
+          </div>
+          <div class="profile-info">
+            <p class="profile-role">Data Engineer | Data Analyst</p>
+            <p class="profile-location">📍 Ontario, Canada</p>
+          </div>
+        </aside>
+
+        <!-- Intro text -->
+        <div class="intro-text">
+          <h2>Hello, I’m Meriya!</h2>
+          <p>
+            I’m a results-driven Data Engineer & Analyst with around 3 years of experience and a PG Diploma
+            in AI & Big Data Analytics. I enjoy turning messy real-world data into clean, reliable pipelines
+            and dashboards that support business decisions.
+          </p>
+          <p>
+            I’ve worked on projects involving ETL automation, predictive modelling, anomaly detection, and
+            real-time data streaming. My toolkit includes Python, SQL, Spark, Airflow, Kafka, and modern BI
+            tools like Power BI and Tableau.
+          </p>
+          <p>
+            Please take a moment to explore my portfolio below. If you’d like to collaborate or have any
+            questions, I’d love to hear from you.
+          </p>
+
+          <div class="intro-actions">
+            <a class="btn-primary" href="#projects">View my projects</a>
+            <a class="btn-ghost" href="#contact">Work with me</a>
+          </div>
         </div>
+      </div>
+    </section>
 
-        <!-- Name + title -->
-        <header class="profile-header">
-          <h1 class="name">Meriya Susan George</h1>
-          <p class="role">Data Engineer · Data Analyst</p>
-          <p class="location">📍 Ontario, Canada</p>
-        </header>
+    <!-- CONTACT + SKILLS + EXPERIENCE / EDUCATION -->
+    <section class="details">
+      <div class="container details-grid">
 
-        <!-- Short summary -->
-        <p class="summary">
-          Results-driven data professional with ~3 years of experience building ETL pipelines, real-time data
-          workflows and decision-ready dashboards using Python, SQL, Spark, Airflow and modern BI tools.
-        </p>
-
-        <!-- Contact -->
-        <section class="section-block">
-          <h2 class="section-title">Contact</h2>
-          <ul class="contact-list">
-            <li><span>✉</span><a href="mailto:meriyageorgebethlem@gmail.com">meriyageorgebethlem@gmail.com</a></li>
-            <li><span>in</span><a href="https://www.linkedin.com/in/meriya-george/" target="_blank">linkedin.com/in/meriya-george</a></li>
-            <li><span>GH</span><a href="https://github.com/meriwhoo" target="_blank">github.com/meriwhoo</a></li>
-          </ul>
-        </section>
-
-        <!-- Skills -->
-        <section class="section-block">
-          <h2 class="section-title">Skills</h2>
+        <!-- LEFT COLUMN: skills + interests -->
+        <div>
+          <h3 class="details-heading">technical skills</h3>
           <div class="chip-row">
             <span>Python</span>
             <span>SQL</span>
@@ -59,113 +82,120 @@
             <span>Power BI</span>
             <span>Tableau</span>
           </div>
-        </section>
 
-        <!-- Experience -->
-        <section class="section-block">
-          <h2 class="section-title">Experience</h2>
-          <div class="timeline">
-            <article class="timeline-item">
-              <div class="timeline-dates">Aug 2021 – Apr 2024</div>
-              <div class="timeline-body">
-                <h3>System Engineer / Developer</h3>
-                <p class="timeline-org">Tata Consultancy Services (TCS)</p>
-                <p class="timeline-text">
-                  Built and maintained data processing solutions with Python and SQL, focusing on ETL workflows,
-                  data quality and reporting for enterprise clients.
-                </p>
-              </div>
-            </article>
-            <article class="timeline-item">
-              <div class="timeline-dates">May 2024 – Sep 2024</div>
-              <div class="timeline-body">
-                <h3>Client Executive</h3>
-                <p class="timeline-org">Voice N Cloud</p>
-                <p class="timeline-text">
-                  Worked with SMB clients to understand requirements, promote IT & cloud solutions, and translate
-                  business needs into technical actions.
-                </p>
-              </div>
-            </article>
+          <h3 class="details-heading">interests</h3>
+          <div class="chip-row">
+            <span>data storytelling</span>
+            <span>dashboards</span>
+            <span>IoT</span>
+            <span>machine learning</span>
+            <span>automation</span>
           </div>
-        </section>
+        </div>
 
-        <!-- Education -->
-        <section class="section-block">
-          <h2 class="section-title">Education</h2>
+        <!-- RIGHT COLUMN: EXPERIENCE + EDUCATION -->
+        <div>
+          <h3 class="details-heading">experience</h3>
           <div class="timeline">
-            <article class="timeline-item">
-              <div class="timeline-dates">May 2024 – Dec 2025</div>
-              <div class="timeline-body">
-                <h3>PG Diploma – AI &amp; Big Data Analytics</h3>
-                <p class="timeline-org">Lambton College, Ontario</p>
+            <div class="timeline-row">
+              <div class="timeline-year">AUG 2021 – APR 2024</div>
+              <div class="timeline-content">
+                <strong>System Engineer / Developer</strong><br>
+                Tata Consultancy Services (TCS)<br>
+                <span class="timeline-small">
+                  Worked with Python and SQL on data processing pipelines and ETL workflows for client projects.
+                </span>
               </div>
-            </article>
-            <article class="timeline-item">
-              <div class="timeline-dates">Aug 2017 – May 2021</div>
-              <div class="timeline-body">
-                <h3>Bachelor’s in Electronics &amp; Communication Engineering</h3>
-                <p class="timeline-org">TKM College of Engineering, Kerala</p>
+            </div>
+            <div class="timeline-row">
+              <div class="timeline-year">MAY 2024 – SEP 2024</div>
+              <div class="timeline-content">
+                <strong>Client Executive</strong><br>
+                Voice N Cloud<br>
+                <span class="timeline-small">
+                  Managed client relationships, gathered requirements and helped map business needs to IT and cloud solutions.
+                </span>
               </div>
-            </article>
+            </div>
           </div>
-        </section>
+
+          <h3 class="details-heading">education</h3>
+          <div class="timeline">
+            <div class="timeline-row">
+              <div class="timeline-year">MAY 2024 – DEC 2025</div>
+              <div class="timeline-content">
+                <strong>PG Diploma – AI &amp; Big Data Analytics</strong><br>
+                Lambton College, Ontario
+              </div>
+            </div>
+            <div class="timeline-row">
+              <div class="timeline-year">AUG 2017 – MAY 2021</div>
+              <div class="timeline-content">
+                <strong>Bachelor’s in Electronics and Communication Engineering</strong><br>
+                TKM College of Engineering, Kerala
+              </div>
+            </div>
+          </div>
+        </div>
+
       </div>
-    </aside>
+    </section>
 
-    <!-- RIGHT: SCROLLABLE PROJECTS -->
-    <section class="projects-panel">
-      <header class="projects-header">
-        <p class="label">Selected work</p>
-        <h2>Projects</h2>
-        <p class="projects-intro">
-          A few projects where I’ve applied data engineering, analytics and ML to solve real problems.
-        </p>
-      </header>
+    <!-- PROJECTS -->
+    <section id="projects" class="projects">
+      <div class="container">
+        <h2 class="section-title">Selected Projects</h2>
 
-      <!-- Project 1 -->
-      <article class="project-card">
-        <header class="project-header">
+        <article class="project-card">
           <h3>iBrand – Real-Time Content Automation Platform</h3>
-          <p class="project-tags">Kafka · Spark · Airflow · MongoDB · FastAPI · Docker</p>
-        </header>
-        <p class="project-text">
-          <strong>Problem.</strong> Brands struggle to keep up with real-time news and social trends while keeping a
-          consistent tone of voice.
-        </p>
-        <p class="project-text">
-          <strong>What I did.</strong> Co-designed a pipeline that ingests articles from multiple news and social
-          sources, streams data via Kafka, processes it with Spark, enriches with NLP signals and stores it in MongoDB
-          for fast querying.
-        </p>
-        <p class="project-text">
-          <strong>Result.</strong> Enabled automated, brand-aligned social content generation on top of clean,
-          queryable article data, reducing manual research time for marketers.
-        </p>
-      </article>
+          <p class="project-meta">Apache Kafka · Spark · Airflow · MongoDB · FastAPI · Docker</p>
+          <p>
+            <strong>Problem.</strong> Brands struggle to keep up with real-time news and social trends while
+            maintaining consistent voice and tone.
+          </p>
+          <p>
+            <strong>What I did.</strong> Co-built a data pipeline that ingests articles from multiple sources,
+            streams them via Kafka, processes them with Spark, and stores enriched results in MongoDB.
+          </p>
+          <p>
+            <strong>Result.</strong> Enabled automated, brand-aligned content generation on top of clean,
+            queryable article data.
+          </p>
+        </article>
 
-      <!-- Project 2 -->
-      <article class="project-card">
-        <header class="project-header">
+        <article class="project-card">
           <h3>AI-Driven Property Deal Finder</h3>
-          <p class="project-tags">Python · Airflow · AWS · XGBoost · SHAP · FastAPI · Twilio</p>
-        </header>
-        <p class="project-text">
-          <strong>Problem.</strong> Realtors needed a way to spot under-priced properties in a noisy, fast-moving
-          Canadian housing market.
-        </p>
-        <p class="project-text">
-          <strong>What I did.</strong> Built a workflow to aggregate listing data, train a regression model (XGBoost)
-          for fair-price prediction, explain model behaviour with SHAP, and send SMS alerts via Twilio when prices
-          look anomalously low.
-        </p>
-        <p class="project-text">
-          <strong>Result.</strong> Helped identify potential deals by flagging listings priced significantly below the
-          model’s prediction, giving realtors a faster starting shortlist.
-        </p>
-      </article>
+          <p class="project-meta">Python · Airflow · AWS · XGBoost · SHAP · FastAPI · Twilio API</p>
+          <p>
+            <strong>Problem.</strong> Realtors needed a way to spot underpriced properties in a fast-moving
+            Canadian housing market.
+          </p>
+          <p>
+            <strong>What I did.</strong> Built a workflow that aggregates listing data, trains a regression
+            model (XGBoost) to estimate fair price, and exposes alerts via an API and SMS notifications.
+          </p>
+          <p>
+            <strong>Result.</strong> Helped identify potential deals by flagging listings priced significantly
+            below the model’s predicted value.
+          </p>
+        </article>
+      </div>
+    </section>
 
-      <!-- You can add more <article class="project-card"> blocks here -->
+    <!-- CONTACT FOOTER -->
+    <section id="contact" class="contact">
+      <div class="container">
+        <h2 class="section-title">Let’s connect</h2>
+        <p>
+          Open to roles in Data Engineering, Analytics and AI-driven products. If my work looks interesting
+          to you, feel free to reach out.
+        </p>
+        <p class="contact-links">
+          📧 <a href="mailto:meriyageorgebethlem@gmail.com">meriyageorgebethlem@gmail.com</a> ·
+          💼 <a href="https://www.linkedin.com/in/meriya-george/" target="_blank">LinkedIn</a> ·
+          💻 <a href="https://github.com/meriwhoo" target="_blank">github.com/meriwhoo</a>
+        </p>
+      </div>
     </section>
   </main>
 </body>
