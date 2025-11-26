@@ -2,76 +2,57 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <title>MERIYA SUSAN GEORGE | Portfolio</title>
+  <title>Meriya Susan George | Portfolio</title>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;800&family=Pacifico&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
+  <div class="page-bg"></div>
 
-  <!-- HERO -->
-  <header class="hero">
-    <div class="container hero-inner">
-      <!-- Big name bar -->
-      <h1 class="hero-name">MERIYA SUSAN GEORGE</h1>
-      <p class="hero-tagline">Data Engineer · Data Analyst</p>
-      <div class="hero-line"></div>
-    </div>
-  </header>
+  <main class="layout container">
+    <!-- LEFT: STICKY PROFILE COLUMN -->
+    <aside class="profile-column">
+      <div class="profile-inner">
+        <!-- Top name -->
+        <header class="name-block">
+          <h1 class="name-lines">
+            <span>MERIYA</span>
+            <span>SUSAN</span>
+            <span>GEORGE</span>
+          </h1>
+        </header>
 
-  <main>
-    <!-- INTRO -->
-    <section class="intro">
-      <div class="container intro-grid">
-
-        <!-- Profile card -->
-        <aside class="profile-card">
-          <div class="avatar-wrapper">
-            <!-- Replace placeholder.png with your actual image filename -->
-            <img src="placeholder.png" alt="Meriya Susan George" class="avatar-img" />
+        <!-- Middle: photo + intro -->
+        <section class="intro-block">
+          <div class="photo-card">
+            <div class="avatar-wrapper">
+              <!-- Replace placeholder.png with your actual image file -->
+              <img src="placeholder.png" alt="Meriya Susan George" class="avatar-img" />
+            </div>
+            <p class="role">Data Engineer · Data Analyst</p>
+            <p class="location">📍 Ontario, Canada</p>
           </div>
-          <div class="profile-info">
-            <p class="profile-role">Data Engineer | Data Analyst</p>
-            <p class="profile-location">📍 Ontario, Canada</p>
+
+          <div class="intro-text">
+            <h2>Hello, I’m Meriya!</h2>
+            <p>
+              I’m a results-driven data person who loves turning messy real-world data into clean pipelines
+              and clear stories. I work with Python, SQL, Spark, Airflow and BI tools to build reliable,
+              decision-ready systems.
+            </p>
+            <div class="intro-actions">
+              <a href="#projects" class="btn-primary">View projects</a>
+              <a href="mailto:meriyageorgebethlem@gmail.com" class="btn-outline">Hire me</a>
+            </div>
           </div>
-        </aside>
+        </section>
 
-        <!-- Intro text -->
-        <div class="intro-text">
-          <h2>Hello, I’m Meriya!</h2>
-          <p>
-            I’m a results-driven Data Engineer & Analyst with around 3 years of experience and a PG Diploma
-            in AI & Big Data Analytics. I enjoy turning messy real-world data into clean, reliable pipelines
-            and dashboards that support business decisions.
-          </p>
-          <p>
-            I’ve worked on projects involving ETL automation, predictive modelling, anomaly detection, and
-            real-time data streaming. My toolkit includes Python, SQL, Spark, Airflow, Kafka, and modern BI
-            tools like Power BI and Tableau.
-          </p>
-          <p>
-            Please take a moment to explore my portfolio below. If you’d like to collaborate or have any
-            questions, I’d love to hear from you.
-          </p>
-
-          <div class="intro-actions">
-            <a class="btn-primary" href="#projects">View my projects</a>
-            <a class="btn-ghost" href="#contact">Work with me</a>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- CONTACT + SKILLS + EXPERIENCE / EDUCATION -->
-    <section class="details">
-      <div class="container details-grid">
-
-        <!-- LEFT COLUMN: skills + interests -->
-        <div>
-          <h3 class="details-heading">technical skills</h3>
+        <!-- Bottom: skills + interests + contact -->
+        <section class="skills-block">
+          <h3 class="section-label">Technical skills</h3>
           <div class="chip-row">
             <span>Python</span>
             <span>SQL</span>
@@ -83,120 +64,131 @@
             <span>Tableau</span>
           </div>
 
-          <h3 class="details-heading">interests</h3>
+          <h3 class="section-label">Interests</h3>
           <div class="chip-row">
-            <span>data storytelling</span>
-            <span>dashboards</span>
+            <span>Data storytelling</span>
+            <span>Dashboards</span>
+            <span>Automation</span>
             <span>IoT</span>
-            <span>machine learning</span>
-            <span>automation</span>
+            <span>ML &amp; analytics</span>
+          </div>
+
+          <div class="contact-snippet">
+            <a href="mailto:meriyageorgebethlem@gmail.com">meriyageorgebethlem@gmail.com</a><br />
+            <a href="https://www.linkedin.com/in/meriya-george/" target="_blank">linkedin.com/in/meriya-george</a><br />
+            <a href="https://github.com/meriwhoo" target="_blank">github.com/meriwhoo</a>
+          </div>
+        </section>
+      </div>
+    </aside>
+
+    <!-- RIGHT: PROJECT CAROUSEL COLUMN -->
+    <section id="projects" class="projects-column">
+      <header class="projects-header">
+        <p class="projects-label">Selected work</p>
+        <h2>Selected projects</h2>
+        <p class="projects-intro">
+          Scroll through a few projects where I’ve used data engineering and analytics to solve real problems.
+        </p>
+      </header>
+
+      <div class="carousel">
+        <div class="carousel-viewport">
+          <div class="carousel-track">
+            <!-- Slide 1 -->
+            <article class="project-card">
+              <h3>iBrand – Real-Time Content Automation Platform</h3>
+              <p class="project-tags">Kafka · Spark · Airflow · MongoDB · FastAPI · Docker</p>
+              <p>
+                <strong>Problem.</strong> Brands struggle to keep up with real-time news and social trends
+                while keeping a consistent voice.
+              </p>
+              <p>
+                <strong>What I did.</strong> Co-designed a pipeline that ingests articles from multiple
+                sources, streams them via Kafka, processes them with Spark, enriches with NLP and stores
+                them in MongoDB for fast querying.
+              </p>
+              <p>
+                <strong>Result.</strong> Enabled automated, brand-aligned post generation on top of clean,
+                queryable article data, reducing manual research time.
+              </p>
+            </article>
+
+            <!-- Slide 2 -->
+            <article class="project-card">
+              <h3>AI-Driven Property Deal Finder</h3>
+              <p class="project-tags">Python · Airflow · AWS · XGBoost · SHAP · FastAPI · Twilio</p>
+              <p>
+                <strong>Problem.</strong> Realtors needed a way to spot under-priced properties in a noisy,
+                fast-moving Canadian housing market.
+              </p>
+              <p>
+                <strong>What I did.</strong> Built a workflow that aggregates listings, trains an XGBoost
+                model to predict fair price, explains behaviour with SHAP and sends SMS alerts via Twilio
+                when prices look unusually low.
+              </p>
+              <p>
+                <strong>Result.</strong> Helped identify potential deals by flagging listings priced well
+                below model predictions, giving realtors a faster short-list.
+              </p>
+            </article>
+
+            <!-- Slide 3 (placeholder / future project) -->
+            <article class="project-card">
+              <h3>Coming soon – New project</h3>
+              <p class="project-tags">Data · Analytics · Experimentation</p>
+              <p>
+                Space reserved for your next favourite project. Add another card here when you’re ready –
+                the carousel will automatically include it in the loop.
+              </p>
+            </article>
           </div>
         </div>
 
-        <!-- RIGHT COLUMN: EXPERIENCE + EDUCATION -->
-        <div>
-          <h3 class="details-heading">experience</h3>
-          <div class="timeline">
-            <div class="timeline-row">
-              <div class="timeline-year">AUG 2021 – APR 2024</div>
-              <div class="timeline-content">
-                <strong>System Engineer / Developer</strong><br>
-                Tata Consultancy Services (TCS)<br>
-                <span class="timeline-small">
-                  Worked with Python and SQL on data processing pipelines and ETL workflows for client projects.
-                </span>
-              </div>
-            </div>
-            <div class="timeline-row">
-              <div class="timeline-year">MAY 2024 – SEP 2024</div>
-              <div class="timeline-content">
-                <strong>Client Executive</strong><br>
-                Voice N Cloud<br>
-                <span class="timeline-small">
-                  Managed client relationships, gathered requirements and helped map business needs to IT and cloud solutions.
-                </span>
-              </div>
-            </div>
-          </div>
+        <!-- Arrows -->
+        <button class="carousel-arrow prev" aria-label="Previous project">‹</button>
+        <button class="carousel-arrow next" aria-label="Next project">›</button>
 
-          <h3 class="details-heading">education</h3>
-          <div class="timeline">
-            <div class="timeline-row">
-              <div class="timeline-year">MAY 2024 – DEC 2025</div>
-              <div class="timeline-content">
-                <strong>PG Diploma – AI &amp; Big Data Analytics</strong><br>
-                Lambton College, Ontario
-              </div>
-            </div>
-            <div class="timeline-row">
-              <div class="timeline-year">AUG 2017 – MAY 2021</div>
-              <div class="timeline-content">
-                <strong>Bachelor’s in Electronics and Communication Engineering</strong><br>
-                TKM College of Engineering, Kerala
-              </div>
-            </div>
-          </div>
+        <!-- Dots -->
+        <div class="carousel-dots">
+          <button class="carousel-dot active" data-slide="0" aria-label="Project 1"></button>
+          <button class="carousel-dot" data-slide="1" aria-label="Project 2"></button>
+          <button class="carousel-dot" data-slide="2" aria-label="Project 3"></button>
         </div>
-
-      </div>
-    </section>
-
-    <!-- PROJECTS -->
-    <section id="projects" class="projects">
-      <div class="container">
-        <h2 class="section-title">Selected Projects</h2>
-
-        <article class="project-card">
-          <h3>iBrand – Real-Time Content Automation Platform</h3>
-          <p class="project-meta">Apache Kafka · Spark · Airflow · MongoDB · FastAPI · Docker</p>
-          <p>
-            <strong>Problem.</strong> Brands struggle to keep up with real-time news and social trends while
-            maintaining consistent voice and tone.
-          </p>
-          <p>
-            <strong>What I did.</strong> Co-built a data pipeline that ingests articles from multiple sources,
-            streams them via Kafka, processes them with Spark, and stores enriched results in MongoDB.
-          </p>
-          <p>
-            <strong>Result.</strong> Enabled automated, brand-aligned content generation on top of clean,
-            queryable article data.
-          </p>
-        </article>
-
-        <article class="project-card">
-          <h3>AI-Driven Property Deal Finder</h3>
-          <p class="project-meta">Python · Airflow · AWS · XGBoost · SHAP · FastAPI · Twilio API</p>
-          <p>
-            <strong>Problem.</strong> Realtors needed a way to spot underpriced properties in a fast-moving
-            Canadian housing market.
-          </p>
-          <p>
-            <strong>What I did.</strong> Built a workflow that aggregates listing data, trains a regression
-            model (XGBoost) to estimate fair price, and exposes alerts via an API and SMS notifications.
-          </p>
-          <p>
-            <strong>Result.</strong> Helped identify potential deals by flagging listings priced significantly
-            below the model’s predicted value.
-          </p>
-        </article>
-      </div>
-    </section>
-
-    <!-- CONTACT FOOTER -->
-    <section id="contact" class="contact">
-      <div class="container">
-        <h2 class="section-title">Let’s connect</h2>
-        <p>
-          Open to roles in Data Engineering, Analytics and AI-driven products. If my work looks interesting
-          to you, feel free to reach out.
-        </p>
-        <p class="contact-links">
-          📧 <a href="mailto:meriyageorgebethlem@gmail.com">meriyageorgebethlem@gmail.com</a> ·
-          💼 <a href="https://www.linkedin.com/in/meriya-george/" target="_blank">LinkedIn</a> ·
-          💻 <a href="https://github.com/meriwhoo" target="_blank">github.com/meriwhoo</a>
-        </p>
       </div>
     </section>
   </main>
+
+  <!-- Simple JS carousel logic -->
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      const track = document.querySelector(".carousel-track");
+      const slides = Array.from(track.children);
+      const dots = Array.from(document.querySelectorAll(".carousel-dot"));
+      const prevBtn = document.querySelector(".carousel-arrow.prev");
+      const nextBtn = document.querySelector(".carousel-arrow.next");
+      const carousel = document.querySelector(".carousel");
+
+      let currentIndex = 0;
+
+      function goToSlide(index) {
+        if (!slides.length) return;
+        currentIndex = (index + slides.length) % slides.length;  // wrap for infinite loop
+        track.style.transform = `translateX(-${currentIndex * 100}%)`;
+        dots.forEach((dot, i) => dot.classList.toggle("active", i === currentIndex));
+      }
+
+      nextBtn.addEventListener("click", () => goToSlide(currentIndex + 1));
+      prevBtn.addEventListener("click", () => goToSlide(currentIndex - 1));
+      dots.forEach((dot, i) => dot.addEventListener("click", () => goToSlide(i)));
+
+      // auto-play
+      let timer = setInterval(() => goToSlide(currentIndex + 1), 7000);
+      carousel.addEventListener("mouseenter", () => clearInterval(timer));
+      carousel.addEventListener("mouseleave", () => {
+        timer = setInterval(() => goToSlide(currentIndex + 1), 7000);
+      });
+    });
+  </script>
 </body>
 </html>
