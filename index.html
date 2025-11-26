@@ -4,6 +4,7 @@
   <meta charset="UTF-8" />
   <title>Meriya Susan George | Portfolio</title>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
@@ -12,47 +13,54 @@
 <body>
   <div class="page-bg"></div>
 
-  <main class="layout container">
-    <!-- LEFT: STICKY PROFILE COLUMN -->
-    <aside class="profile-column">
-      <div class="profile-inner">
-        <!-- Top name -->
-        <header class="name-block">
-          <h1 class="name-lines">
-            <span>MERIYA</span>
-            <span>SUSAN</span>
-            <span>GEORGE</span>
-          </h1>
-        </header>
-
-        <!-- Middle: photo + intro -->
-        <section class="intro-block">
-          <div class="photo-card">
-            <div class="avatar-wrapper">
-              <!-- Replace placeholder.png with your actual image file -->
-              <img src="placeholder.png" alt="Meriya Susan George" class="avatar-img" />
-            </div>
-            <p class="role">Data Engineer · Data Analyst</p>
-            <p class="location">📍 Ontario, Canada</p>
+  <div class="page">
+    <!-- TOP HERO -->
+    <header class="hero container">
+      <div class="hero-left">
+        <div class="photo-card">
+          <!-- replace placeholder.png with your real photo when ready -->
+          <img src="placeholder.png" alt="Meriya Susan George" class="hero-photo" />
+          <div class="photo-meta">
+            <p class="photo-role">Data Engineer · Data Analyst</p>
+            <p class="photo-loc">📍 Ontario, Canada</p>
           </div>
+        </div>
+      </div>
 
-          <div class="intro-text">
-            <h2>Hello, I’m Meriya!</h2>
-            <p>
-              I’m a results-driven data person who loves turning messy real-world data into clean pipelines
-              and clear stories. I work with Python, SQL, Spark, Airflow and BI tools to build reliable,
-              decision-ready systems.
-            </p>
-            <div class="intro-actions">
-              <a href="#projects" class="btn-primary">View projects</a>
-              <a href="mailto:meriyageorgebethlem@gmail.com" class="btn-outline">Hire me</a>
-            </div>
-          </div>
-        </section>
+      <div class="hero-right">
+        <h1 class="hero-title">Hello, I’m Meriya!</h1>
+        <p class="hero-body">
+          I’m a results-driven data professional with ~3 years of experience building ETL pipelines,
+          real-time data workflows and decision-ready dashboards using Python, SQL, Spark, Airflow
+          and modern BI tools like Power BI and Tableau.
+        </p>
+        <p class="hero-body">
+          I enjoy turning messy real-world data into clean systems and clear stories that help teams
+          move faster and make better decisions.
+        </p>
 
-        <!-- Bottom: skills + interests + contact -->
-        <section class="skills-block">
-          <h3 class="section-label">Technical skills</h3>
+        <div class="hero-actions">
+          <a href="#projects" class="btn-primary">View projects</a>
+          <a href="mailto:meriyageorgebethlem@gmail.com" class="btn-secondary">Work with me</a>
+        </div>
+      </div>
+    </header>
+
+    <!-- LOWER GRID: LEFT INFO + RIGHT SCROLLABLE PROJECTS -->
+    <main class="lower container">
+      <!-- LEFT COLUMN -->
+      <section class="col-left">
+        <div class="section-block">
+          <h2 class="section-heading">contact</h2>
+          <ul class="contact-list">
+            <li>📧 <a href="mailto:meriyageorgebethlem@gmail.com">meriyageorgebethlem@gmail.com</a></li>
+            <li>💼 <a href="https://www.linkedin.com/in/meriya-george/" target="_blank">linkedin.com/in/meriya-george</a></li>
+            <li>💻 <a href="https://github.com/meriwhoo" target="_blank">github.com/meriwhoo</a></li>
+          </ul>
+        </div>
+
+        <div class="section-block">
+          <h2 class="section-heading">technical skills</h2>
           <div class="chip-row">
             <span>Python</span>
             <span>SQL</span>
@@ -63,8 +71,10 @@
             <span>Power BI</span>
             <span>Tableau</span>
           </div>
+        </div>
 
-          <h3 class="section-label">Interests</h3>
+        <div class="section-block">
+          <h2 class="section-heading">interests</h2>
           <div class="chip-row">
             <span>Data storytelling</span>
             <span>Dashboards</span>
@@ -72,123 +82,45 @@
             <span>IoT</span>
             <span>ML &amp; analytics</span>
           </div>
+        </div>
+      </section>
 
-          <div class="contact-snippet">
-            <a href="mailto:meriyageorgebethlem@gmail.com">meriyageorgebethlem@gmail.com</a><br />
-            <a href="https://www.linkedin.com/in/meriya-george/" target="_blank">linkedin.com/in/meriya-george</a><br />
-            <a href="https://github.com/meriwhoo" target="_blank">github.com/meriwhoo</a>
-          </div>
-        </section>
-      </div>
-    </aside>
-
-    <!-- RIGHT: PROJECT CAROUSEL COLUMN -->
-    <section id="projects" class="projects-column">
-      <header class="projects-header">
-        <p class="projects-label">Selected work</p>
-        <h2>Selected projects</h2>
+      <!-- RIGHT COLUMN: SCROLLABLE PROJECTS PANEL -->
+      <section class="col-right" id="projects">
+        <h2 class="section-heading main">selected projects</h2>
         <p class="projects-intro">
-          Scroll through a few projects where I’ve used data engineering and analytics to solve real problems.
+          A few projects where I’ve applied data engineering, analytics and ML to solve real problems.
         </p>
-      </header>
 
-      <div class="carousel">
-        <div class="carousel-viewport">
-          <div class="carousel-track">
-            <!-- Slide 1 -->
-            <article class="project-card">
-              <h3>iBrand – Real-Time Content Automation Platform</h3>
-              <p class="project-tags">Kafka · Spark · Airflow · MongoDB · FastAPI · Docker</p>
-              <p>
-                <strong>Problem.</strong> Brands struggle to keep up with real-time news and social trends
-                while keeping a consistent voice.
-              </p>
-              <p>
-                <strong>What I did.</strong> Co-designed a pipeline that ingests articles from multiple
-                sources, streams them via Kafka, processes them with Spark, enriches with NLP and stores
-                them in MongoDB for fast querying.
-              </p>
-              <p>
-                <strong>Result.</strong> Enabled automated, brand-aligned post generation on top of clean,
-                queryable article data, reducing manual research time.
-              </p>
-            </article>
+        <!-- Scrollable area -->
+        <div class="projects-scroll">
+          <!-- PROJECT 1 -->
+          <article class="project-card">
+            <h3>iBrand – Real-Time Content Automation Platform</h3>
+            <p class="project-meta">Kafka · Spark · Airflow · MongoDB · FastAPI · Docker</p>
+            <p><strong>Problem.</strong> Brands struggle to keep up with real-time news and social trends while maintaining a consistent tone of voice.</p>
+            <p><strong>What I did.</strong> Co-designed a pipeline that ingests articles from multiple news and social sources, streams the data via Kafka, processes it with Spark, enriches it with NLP signals and stores it in MongoDB for fast querying.</p>
+            <p><strong>Result.</strong> Enabled automated, brand-aligned social content generation on top of clean, queryable article data, reducing manual research time.</p>
+          </article>
 
-            <!-- Slide 2 -->
-            <article class="project-card">
-              <h3>AI-Driven Property Deal Finder</h3>
-              <p class="project-tags">Python · Airflow · AWS · XGBoost · SHAP · FastAPI · Twilio</p>
-              <p>
-                <strong>Problem.</strong> Realtors needed a way to spot under-priced properties in a noisy,
-                fast-moving Canadian housing market.
-              </p>
-              <p>
-                <strong>What I did.</strong> Built a workflow that aggregates listings, trains an XGBoost
-                model to predict fair price, explains behaviour with SHAP and sends SMS alerts via Twilio
-                when prices look unusually low.
-              </p>
-              <p>
-                <strong>Result.</strong> Helped identify potential deals by flagging listings priced well
-                below model predictions, giving realtors a faster short-list.
-              </p>
-            </article>
+          <!-- PROJECT 2 -->
+          <article class="project-card">
+            <h3>AI-Driven Property Deal Finder</h3>
+            <p class="project-meta">Python · Airflow · AWS · XGBoost · SHAP · FastAPI · Twilio</p>
+            <p><strong>Problem.</strong> Realtors needed a way to identify under-priced properties in a fast-moving Canadian housing market.</p>
+            <p><strong>What I did.</strong> Built a workflow that aggregates listing data, trains an XGBoost model to estimate fair price, explains behaviour with SHAP, and sends SMS alerts via Twilio when listings look significantly under-valued.</p>
+            <p><strong>Result.</strong> Helped identify potential deals by flagging listings priced well below model predictions, giving realtors a focused shortlist.</p>
+          </article>
 
-            <!-- Slide 3 (placeholder / future project) -->
-            <article class="project-card">
-              <h3>Coming soon – New project</h3>
-              <p class="project-tags">Data · Analytics · Experimentation</p>
-              <p>
-                Space reserved for your next favourite project. Add another card here when you’re ready –
-                the carousel will automatically include it in the loop.
-              </p>
-            </article>
-          </div>
+          <!-- PROJECT 3 (placeholder for future) -->
+          <article class="project-card">
+            <h3>Next project coming soon</h3>
+            <p class="project-meta">Data · Analytics · Experimentation</p>
+            <p>This slot is reserved for your next project. Add more <code>&lt;article class="project-card"&gt;</code> blocks here as your portfolio grows — this panel will stay scrollable even if you add many projects.</p>
+          </article>
         </div>
-
-        <!-- Arrows -->
-        <button class="carousel-arrow prev" aria-label="Previous project">‹</button>
-        <button class="carousel-arrow next" aria-label="Next project">›</button>
-
-        <!-- Dots -->
-        <div class="carousel-dots">
-          <button class="carousel-dot active" data-slide="0" aria-label="Project 1"></button>
-          <button class="carousel-dot" data-slide="1" aria-label="Project 2"></button>
-          <button class="carousel-dot" data-slide="2" aria-label="Project 3"></button>
-        </div>
-      </div>
-    </section>
-  </main>
-
-  <!-- Simple JS carousel logic -->
-  <script>
-    document.addEventListener("DOMContentLoaded", () => {
-      const track = document.querySelector(".carousel-track");
-      const slides = Array.from(track.children);
-      const dots = Array.from(document.querySelectorAll(".carousel-dot"));
-      const prevBtn = document.querySelector(".carousel-arrow.prev");
-      const nextBtn = document.querySelector(".carousel-arrow.next");
-      const carousel = document.querySelector(".carousel");
-
-      let currentIndex = 0;
-
-      function goToSlide(index) {
-        if (!slides.length) return;
-        currentIndex = (index + slides.length) % slides.length;  // wrap for infinite loop
-        track.style.transform = `translateX(-${currentIndex * 100}%)`;
-        dots.forEach((dot, i) => dot.classList.toggle("active", i === currentIndex));
-      }
-
-      nextBtn.addEventListener("click", () => goToSlide(currentIndex + 1));
-      prevBtn.addEventListener("click", () => goToSlide(currentIndex - 1));
-      dots.forEach((dot, i) => dot.addEventListener("click", () => goToSlide(i)));
-
-      // auto-play
-      let timer = setInterval(() => goToSlide(currentIndex + 1), 7000);
-      carousel.addEventListener("mouseenter", () => clearInterval(timer));
-      carousel.addEventListener("mouseleave", () => {
-        timer = setInterval(() => goToSlide(currentIndex + 1), 7000);
-      });
-    });
-  </script>
+      </section>
+    </main>
+  </div>
 </body>
 </html>
