@@ -23,7 +23,7 @@
 }
 
 html {
-  font-size: 17px; /* slightly zoomed-in */
+  font-size: 18px; /* slightly zoomed-in */
 }
 
 html,
@@ -60,9 +60,10 @@ a:hover {
    ========== */
 
 .container {
-  max-width: 960px;
+  /* use more of the screen instead of a skinny column */
+  width: min(1320px, 100% - 4rem);  /* 4rem ≈ 64px margin left+right */
   margin: 0 auto;
-  padding: 2.5rem 1.75rem;
+  padding: 2.5rem 0;
 }
 
 .page {
@@ -82,7 +83,7 @@ a:hover {
   border: 1px solid var(--border-subtle);
   box-shadow: 0 20px 40px rgba(0, 0, 0, 0.08);
   align-items: center;
-  margin-top: 1.8rem;
+  margin-top: 1.2rem;
 }
 
 .hero-left {
