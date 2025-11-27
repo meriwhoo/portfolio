@@ -14,40 +14,45 @@
   <div class="page-bg"></div>
 
   <div class="page">
-    <header class="hero container">
-      <div class="hero-left">
-        <div class="photo-card">
-          <img src="placeholder.png" alt="Meriya Susan George" class="hero-photo" />
-          <div class="photo-meta">
-            <p class="photo-role">Data Engineer · Data Analyst</p>
-            <p class="photo-loc">📍 Ontario, Canada</p>
+    <!-- ===== HERO (full-width section, Luca style) ===== -->
+    <header class="hero">
+      <div class="container hero-inner">
+        <!-- Left: photo card -->
+        <div class="hero-left">
+          <div class="photo-card">
+            <!-- Replace placeholder.png with your actual image -->
+            <img src="placeholder.png" alt="Meriya Susan George" class="hero-photo" />
+            <div class="photo-meta">
+              <p class="photo-role">Data Engineer · Data Analyst</p>
+              <p class="photo-loc">📍 Ontario, Canada</p>
+            </div>
           </div>
         </div>
-      </div>
 
-      <!-- Right: big heading + intro -->
-      <div class="hero-right">
-        <h1 class="hero-title">Hello, I’m Meriya!</h1>
-        <p class="hero-body">
-          I’m a results-driven data professional with around 3 years of experience building ETL
-          pipelines, real-time data workflows and decision-ready dashboards using Python, SQL, Spark,
-          Airflow and BI tools like Power BI and Tableau.
-        </p>
-        <p class="hero-body">
-          I love turning messy real-world data into clean systems and clear stories that help teams move
-          faster and make better decisions.
-        </p>
+        <!-- Right: intro text -->
+        <div class="hero-right">
+          <h1 class="hero-title">Hello, I’m Meriya!</h1>
+          <p class="hero-body">
+            I’m a results-driven data professional with around 3 years of experience building ETL
+            pipelines, real-time data workflows and decision-ready dashboards using Python, SQL, Spark,
+            Airflow and BI tools like Power BI and Tableau.
+          </p>
+          <p class="hero-body">
+            I love turning messy real-world data into clean systems and clear stories that help teams move
+            faster and make better decisions.
+          </p>
 
-        <div class="hero-actions">
-          <a href="#projects" class="btn-primary">View projects</a>
-          <a href="mailto:meriyageorgebethlem@gmail.com" class="btn-secondary">Work with me</a>
+          <div class="hero-actions">
+            <a href="#projects" class="btn-primary">View projects</a>
+            <a href="mailto:meriyageorgebethlem@gmail.com" class="btn-secondary">Work with me</a>
+          </div>
         </div>
       </div>
     </header>
 
-    <!-- LOWER GRID: left info, right projects -->
+    <!-- ===== LOWER GRID: left info, right projects ===== -->
     <main class="lower container">
-      <!-- LEFT COLUMN: contact + skills + interests -->
+      <!-- LEFT COLUMN -->
       <section class="col-left">
         <div class="section-block">
           <h2 class="section-heading">contact</h2>
@@ -60,7 +65,7 @@
 
         <div class="section-block">
           <h2 class="section-heading">technical skills</h2>
-          <div class="chip-row">
+          <div class="chip-row chip-row-skills">
             <span>Python</span>
             <span>SQL</span>
             <span>Apache Spark</span>
@@ -74,7 +79,7 @@
 
         <div class="section-block">
           <h2 class="section-heading">interests</h2>
-          <div class="chip-row">
+          <div class="chip-row chip-row-interests">
             <span>Data storytelling</span>
             <span>Dashboards</span>
             <span>Automation</span>
@@ -84,7 +89,7 @@
         </div>
       </section>
 
-      <!-- RIGHT COLUMN: PROJECTS -->
+      <!-- RIGHT COLUMN: PROJECTS (tabs + carousel) -->
       <section class="col-right" id="projects">
         <div class="projects-header-row">
           <div>
@@ -94,23 +99,23 @@
               Use the tabs or arrows to browse.
             </p>
           </div>
-          <!-- Tabs per project -->
+
           <div class="project-tabs">
             <button class="project-tab active" data-index="0">iBrand</button>
             <button class="project-tab" data-index="1">AI Property Deal Finder</button>
+            <!-- Add more tabs later (e.g., Power BI dashboards) -->
           </div>
         </div>
 
-        <!-- Carousel in the old education/experience area -->
         <div class="projects-carousel">
           <button class="carousel-arrow prev" aria-label="Previous project">‹</button>
 
           <div class="carousel-viewport">
             <div class="carousel-track">
-              <!-- Slide 1: iBrand -->
+              <!-- Slide 1 -->
               <article class="project-card">
                 <h3>iBrand – Real-Time Content Automation Platform</h3>
-                <p class="project-meta">Kafka · Spark · Airflow · MongoDB · FastAPI · Docker</p>
+                <p class="project-meta">KAFKA · SPARK · AIRFLOW · MONGODB · FASTAPI · DOCKER</p>
                 <p>
                   <strong>Problem.</strong> Brands struggle to keep up with real-time news and social trends
                   while maintaining a consistent tone of voice.
@@ -126,10 +131,10 @@
                 </p>
               </article>
 
-              <!-- Slide 2: AI Property Deal Finder -->
+              <!-- Slide 2 -->
               <article class="project-card">
                 <h3>AI-Driven Property Deal Finder</h3>
-                <p class="project-meta">Python · Airflow · AWS · XGBoost · SHAP · FastAPI · Twilio</p>
+                <p class="project-meta">PYTHON · AIRFLOW · AWS · XGBOOST · SHAP · FASTAPI · TWILIO</p>
                 <p>
                   <strong>Problem.</strong> Realtors needed a way to identify under-priced properties in a
                   fast-moving Canadian housing market.
@@ -153,7 +158,7 @@
     </main>
   </div>
 
-  <!-- Simple JS for tabs + infinite carousel -->
+  <!-- ===== JS for tabs + infinite carousel ===== -->
   <script>
     document.addEventListener("DOMContentLoaded", () => {
       const track = document.querySelector(".carousel-track");
@@ -166,7 +171,7 @@
 
       function goToSlide(index) {
         if (!slides.length) return;
-        currentIndex = (index + slides.length) % slides.length; // wrap for infinite loop
+        currentIndex = (index + slides.length) % slides.length; // wrap around
         track.style.transform = `translateX(-${currentIndex * 100}%)`;
         tabs.forEach((tab, i) => tab.classList.toggle("active", i === currentIndex));
       }

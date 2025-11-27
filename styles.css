@@ -1,5 +1,5 @@
 /* ==========
-   Base & Theme (Luca-style neutrals)
+   Base & Theme
    ========== */
 
 *,
@@ -9,21 +9,19 @@
 }
 
 :root {
-  /* warm light background like Luca's */
-  --bg-page: #f5f2ec;      /* soft beige/grey */
-  --bg-card: #ffffff;      /* pure white cards */
+  --bg-page: #f5f2ec;      /* soft beige like Luca */
+  --bg-card: #ffffff;
   --border-subtle: #e0ded7;
 
-  /* main accent is basically black */
-  --accent: #111111;
-  --accent-soft: #f3f1ec;  /* very light neutral */
+  --accent: #111111;       /* almost black */
+  --accent-soft: #f3f1ec;
 
-  --text-main: #111111;    /* almost black */
-  --text-muted: #6a6a6a;   /* medium grey */
+  --text-main: #111111;
+  --text-muted: #6a6a6a;
 }
 
 html {
-  font-size: 18px; /* slightly zoomed-in */
+  font-size: 17px;
 }
 
 html,
@@ -59,22 +57,32 @@ a:hover {
    Layout
    ========== */
 
-.container {
-  /* use more of the screen instead of a skinny column */
-  width: min(1320px, 100% - 4rem);  /* 4rem ≈ 64px margin left+right */
-  margin: 0 auto;
-  padding: 2.5rem 0;
-}
-
 .page {
   min-height: 100vh;
 }
 
+.container {
+  /* wider, more screenfull */
+  width: min(1320px, 100% - 4rem); /* keep 2rem margin each side */
+  margin: 0 auto;
+  padding: 2.5rem 0;
+}
+
 /* ==========
-   HERO (top section)
+   HERO
    ========== */
 
+/* full-width hero section */
 .hero {
+  width: 100%;
+  padding: 3rem 0 4rem;
+  min-height: 80vh;         /* almost full screen height */
+  display: flex;
+  align-items: center;
+}
+
+/* inner card layout */
+.hero-inner {
   display: grid;
   grid-template-columns: minmax(0, 0.9fr) minmax(0, 1.4fr);
   gap: 2.4rem;
@@ -83,7 +91,6 @@ a:hover {
   border: 1px solid var(--border-subtle);
   box-shadow: 0 20px 40px rgba(0, 0, 0, 0.08);
   align-items: center;
-  margin-top: 1.2rem;
 }
 
 .hero-left {
@@ -93,6 +100,8 @@ a:hover {
 .hero-right {
   padding: 1.8rem 1.8rem 1.8rem 0;
 }
+
+/* photo card */
 
 .photo-card {
   background: #111111;
@@ -126,6 +135,8 @@ a:hover {
   opacity: 0.85;
 }
 
+/* hero text */
+
 .hero-title {
   margin: 0 0 0.9rem;
   font-size: clamp(2.2rem, 4vw, 3rem);
@@ -144,7 +155,7 @@ a:hover {
   gap: 0.8rem;
 }
 
-/* Buttons (Luca-style pills) */
+/* Buttons */
 
 .btn-primary,
 .btn-secondary {
@@ -194,7 +205,7 @@ a:hover {
   padding-top: 2.5rem;
 }
 
-/* Left column */
+/* left column */
 
 .col-left .section-block + .section-block {
   margin-top: 2rem;
@@ -221,7 +232,7 @@ a:hover {
   margin-bottom: 0.45rem;
 }
 
-/* Chips */
+/* chips */
 
 .chip-row {
   display: flex;
@@ -235,14 +246,14 @@ a:hover {
   font-size: 0.8rem;
 }
 
-/* Technical skills = solid black pill with white text */
+/* technical skills = solid black */
 .chip-row-skills span {
   background: #111111;
   border: 1px solid #111111;
   color: #ffffff;
 }
 
-/* Interests = white/transparent with thin grey border */
+/* interests = outlined */
 .chip-row-interests span {
   background: transparent;
   border: 1px solid #d4d4d4;
@@ -250,7 +261,7 @@ a:hover {
 }
 
 /* ==========
-   Projects column (right)
+   Projects column
    ========== */
 
 .col-right {
@@ -272,7 +283,7 @@ a:hover {
   color: var(--text-muted);
 }
 
-/* Tabs */
+/* tabs */
 
 .project-tabs {
   display: inline-flex;
@@ -295,7 +306,7 @@ a:hover {
   color: #f9fafb;
 }
 
-/* Carousel */
+/* carousel */
 
 .projects-carousel {
   position: relative;
@@ -314,8 +325,6 @@ a:hover {
   display: flex;
   transition: transform 0.45s ease;
 }
-
-/* Each slide */
 
 .project-card {
   min-width: 100%;
@@ -346,7 +355,7 @@ a:hover {
   color: #111111;
 }
 
-/* Arrows */
+/* arrows */
 
 .carousel-arrow {
   position: absolute;
@@ -384,6 +393,11 @@ a:hover {
 
 @media (max-width: 900px) {
   .hero {
+    min-height: 0;           /* don’t force huge height on small screens */
+    padding: 2rem 0 2.5rem;
+  }
+
+  .hero-inner {
     grid-template-columns: 1fr;
   }
 
