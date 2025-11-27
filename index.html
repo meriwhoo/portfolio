@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <title>Meriya Susan George | Portfolio</title>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <!-- Font similar to those examples -->
+  <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
@@ -13,31 +13,34 @@
 <body>
   <main class="page">
 
-    <!-- ================= HERO ================= -->
+    <!-- ============== HERO ============== -->
     <section class="hero">
       <div class="container hero-inner">
 
+        <!-- Photo / name card -->
         <div class="hero-photo-card">
           <div class="hero-photo-frame">
-            <!-- replace with your actual image file -->
+            <!-- Replace with your actual photo -->
             <img src="placeholder.png" alt="Meriya Susan George" />
           </div>
+          <p class="hero-name">Meriya Susan George</p>
           <p class="hero-role">Data Engineer · Data Analyst</p>
           <p class="hero-location">Ontario, Canada</p>
         </div>
 
+        <!-- Intro text -->
         <div class="hero-text">
-          <p class="eyebrow">Sobre mi.</p>
-          <h1>Hola, soy Meriya.</h1>
+          <p class="eyebrow">Portfolio</p>
+          <h1>Hello, I’m Meriya.</h1>
           <p class="hero-subtitle">
             Results-driven data professional with around 3 years of experience
             building ETL pipelines, real-time data workflows and decision-ready
-            dashboards using Python, SQL, Spark, Airflow and BI tools like Power BI
-            and Tableau.
+            dashboards using Python, SQL, Spark, Airflow and BI tools like
+            Power BI and Tableau.
           </p>
           <p class="hero-subtitle">
-            I love turning messy real-world data into clean systems and clear stories
-            that help teams move faster and make better decisions.
+            I love turning messy real-world data into clean systems and clear
+            stories that help teams move faster and make better decisions.
           </p>
 
           <div class="hero-actions">
@@ -49,136 +52,100 @@
       </div>
     </section>
 
-    <!-- ================= ABOUT / SKILLS / CONTACT ================= -->
-    <section class="about-section">
-      <div class="container about-grid">
-
-        <!-- Left: long about text -->
-        <div class="about-left">
-          <h2>About me</h2>
-          <p>
-            I’m a data engineer & analyst who enjoys taking ambiguous business
-            questions and turning them into clean data models, pipelines and
-            dashboards. I’ve worked on projects involving ETL automation,
-            predictive modelling, anomaly detection and real-time streaming.
-          </p>
-          <p>
-            My toolkit includes Python, SQL, Apache Spark, Airflow, Kafka,
-            MongoDB and modern BI tools. I care about readable code, clear
-            documentation and delivering insights that people actually use.
-          </p>
-        </div>
-
-        <!-- Right: skills + contact (like “Idiomas / Software / Contacto”) -->
-        <div class="about-right">
-
-          <div class="about-block">
-            <h3>Technical skills</h3>
-            <div class="chip-row">
-              <span class="chip">Python</span>
-              <span class="chip">SQL</span>
-              <span class="chip">Apache Spark</span>
-              <span class="chip">Airflow</span>
-              <span class="chip">Kafka</span>
-              <span class="chip">MongoDB</span>
-              <span class="chip">Power BI</span>
-              <span class="chip">Tableau</span>
-            </div>
-          </div>
-
-          <div class="about-block">
-            <h3>Interests</h3>
-            <div class="chip-row">
-              <span class="chip">Data storytelling</span>
-              <span class="chip">Dashboards</span>
-              <span class="chip">IoT</span>
-              <span class="chip">ML & analytics</span>
-            </div>
-          </div>
-
-          <div class="about-block">
-            <h3>Contact</h3>
-            <ul class="contact-list">
-              <li>
-                <strong>Email</strong><br>
-                <a href="mailto:meriyageorgebethlem@gmail.com">
-                  meriyageorgebethlem@gmail.com
-                </a>
-              </li>
-              <li>
-                <strong>LinkedIn</strong><br>
-                <a href="https://www.linkedin.com/in/meriya-george/" target="_blank">
-                  linkedin.com/in/meriya-george
-                </a>
-              </li>
-              <li>
-                <strong>GitHub</strong><br>
-                <a href="https://github.com/meriwhoo" target="_blank">
-                  github.com/meriwhoo
-                </a>
-              </li>
-            </ul>
-          </div>
-
-        </div>
-
-      </div>
-    </section>
-
-    <!-- ================= PROJECTS ================= -->
+    <!-- ============== PROJECTS ============== -->
     <section id="projects" class="projects-section">
       <div class="container">
-        <h2>Selected projects</h2>
+        <div class="projects-header">
+          <div>
+            <h2>Selected projects</h2>
+            <p class="projects-intro">
+              A few places where I’ve applied data engineering, analytics and AI
+              to solve real problems.
+            </p>
+          </div>
 
-        <!-- Tabs -->
-        <div class="project-tabs">
-          <button class="project-tab active" data-project="ibrand">iBrand</button>
-          <button class="project-tab" data-project="deal-finder">AI Property Deal Finder</button>
+          <!-- Category subtabs -->
+          <div class="project-filters">
+            <button class="filter-tab active" data-filter="all">All projects</button>
+            <button class="filter-tab" data-filter="dashboards">Dashboards</button>
+            <button class="filter-tab" data-filter="ai">AI</button>
+          </div>
         </div>
 
-        <!-- Project cards (we’ll show/hide them with a tiny bit of JS) -->
-        <div class="project-card active" id="project-ibrand">
-          <h3>iBrand – Real-Time Content Automation Platform</h3>
-          <p class="project-meta">
-            Kafka · Spark · Airflow · MongoDB · FastAPI · Docker
-          </p>
+        <!-- Scrollable project list -->
+        <div class="project-list">
+          <!-- iBrand -->
+          <article class="project-card" data-tags="ai">
+            <h3>iBrand – Real-Time Content Automation Platform</h3>
+            <p class="project-meta">
+              Kafka · Spark · Airflow · MongoDB · FastAPI · Docker
+            </p>
+            <p><strong>Problem.</strong> Brands struggle to keep up with real-time news and social trends while maintaining a consistent tone of voice.</p>
+            <p><strong>What I did.</strong> Co-designed a pipeline that ingests articles from multiple news and social sources, streams the data via Kafka, processes it with Spark, enriches it with NLP signals and stores it in MongoDB for fast querying.</p>
+            <p><strong>Result.</strong> Enabled automated, brand-aligned social content generation on top of clean, queryable article data, reducing manual research time for marketers.</p>
+          </article>
 
-          <p><strong>Problem.</strong> Brands struggle to keep up with real-time news and social trends while maintaining a consistent tone of voice.</p>
-          <p><strong>What I did.</strong> Co-designed a pipeline that ingests articles from multiple news and social sources, streams the data via Kafka, processes it with Spark, enriches it with NLP signals and stores it in MongoDB for fast querying.</p>
-          <p><strong>Result.</strong> Enabled automated, brand-aligned social content generation on top of clean, queryable article data, reducing manual research time for marketers.</p>
+          <!-- AI Property Deal Finder -->
+          <article class="project-card" data-tags="ai">
+            <h3>AI-Driven Property Deal Finder</h3>
+            <p class="project-meta">
+              Python · Airflow · AWS · XGBoost · SHAP · FastAPI · Twilio
+            </p>
+            <p><strong>Problem.</strong> Realtors needed a way to spot under-priced properties in a noisy, fast-moving Canadian housing market.</p>
+            <p><strong>What I did.</strong> Built a workflow that aggregates listing data, trains a regression model (XGBoost) to estimate fair price, explains model behaviour with SHAP and sends SMS alerts via Twilio when prices look anomalously low.</p>
+            <p><strong>Result.</strong> Helped identify potential deals by flagging listings priced significantly below the model’s predicted value, giving realtors a faster starting shortlist.</p>
+          </article>
+
+          <!-- Example dashboard project (you can edit or delete later) -->
+          <!--
+          <article class="project-card" data-tags="dashboards">
+            <h3>Sales Performance Dashboard</h3>
+            <p class="project-meta">
+              Power BI · DAX · SQL
+            </p>
+            <p>Short description here…</p>
+          </article>
+          -->
         </div>
 
-        <div class="project-card" id="project-deal-finder">
-          <h3>AI-Driven Property Deal Finder</h3>
-          <p class="project-meta">
-            Python · Airflow · AWS · XGBoost · SHAP · FastAPI · Twilio
-          </p>
+        <!-- Shown only when a filter has no projects -->
+        <p class="empty-state" id="emptyState">No projects in this category yet.</p>
 
-          <p><strong>Problem.</strong> Realtors needed a way to spot under-priced properties in a noisy, fast-moving Canadian housing market.</p>
-          <p><strong>What I did.</strong> Built a workflow that aggregates listing data, trains a regression model (XGBoost) to estimate fair price, explains model behaviour with SHAP and sends SMS alerts via Twilio when prices look anomalously low.</p>
-          <p><strong>Result.</strong> Helped identify potential deals by flagging listings priced significantly below the model’s predicted value, giving realtors a faster starting shortlist.</p>
-        </div>
       </div>
     </section>
 
   </main>
 
   <script>
-    // Tiny JS to switch the project tabs
-    const tabs = document.querySelectorAll('.project-tab');
-    const cards = document.querySelectorAll('.project-card');
+    // Filter logic for All / Dashboards / AI
+    const filterTabs = document.querySelectorAll('.filter-tab');
+    const projectCards = document.querySelectorAll('.project-card');
+    const emptyState = document.getElementById('emptyState');
 
-    tabs.forEach(tab => {
+    function applyFilter(filter) {
+      let visibleCount = 0;
+
+      projectCards.forEach(card => {
+        const tags = card.dataset.tags.split(',');
+        const matches = filter === 'all' || tags.includes(filter);
+
+        card.style.display = matches ? 'block' : 'none';
+        if (matches) visibleCount++;
+      });
+
+      emptyState.style.display = visibleCount === 0 ? 'block' : 'none';
+    }
+
+    filterTabs.forEach(tab => {
       tab.addEventListener('click', () => {
-        const id = tab.dataset.project;
-
-        tabs.forEach(t => t.classList.remove('active'));
-        cards.forEach(c => c.classList.remove('active'));
-
+        filterTabs.forEach(t => t.classList.remove('active'));
         tab.classList.add('active');
-        document.getElementById('project-' + id).classList.add('active');
+        applyFilter(tab.dataset.filter);
       });
     });
+
+    // Initial state
+    applyFilter('all');
   </script>
 </body>
 </html>
