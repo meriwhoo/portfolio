@@ -52,72 +52,125 @@
       </div>
     </section>
 
-    <!-- ============== PROJECTS ============== -->
+    <!-- ============== INFO + PROJECTS ============== -->
     <section id="projects" class="projects-section">
-      <div class="container">
-        <div class="projects-header">
-          <div>
-            <h2>Selected projects</h2>
-            <p class="projects-intro">
-              A few places where I’ve applied data engineering, analytics and AI
-              to solve real problems.
-            </p>
+      <div class="container projects-layout">
+
+        <!-- LEFT COLUMN: Contact / Skills / Interests -->
+        <aside class="info-column">
+          <div class="info-block">
+            <h2 class="info-heading">contact</h2>
+            <ul class="info-list">
+              <li>
+                <span class="bullet"></span>
+                <a href="mailto:meriyageorgebethlem@gmail.com">
+                  meriyageorgebethlem@gmail.com
+                </a>
+              </li>
+              <li>
+                <span class="bullet"></span>
+                <a href="https://www.linkedin.com/in/meriya-george/" target="_blank">
+                  linkedin.com/in/meriya-george
+                </a>
+              </li>
+              <li>
+                <span class="bullet"></span>
+                <a href="https://github.com/meriwhoo" target="_blank">
+                  github.com/meriwhoo
+                </a>
+              </li>
+            </ul>
           </div>
 
-          <!-- Category subtabs -->
-          <div class="project-filters">
-            <button class="filter-tab active" data-filter="all">All projects</button>
-            <button class="filter-tab" data-filter="dashboards">Dashboards</button>
-            <button class="filter-tab" data-filter="ai">AI</button>
+          <div class="info-block">
+            <h2 class="info-heading">technical skills</h2>
+            <div class="chip-row">
+              <span class="chip">Python</span>
+              <span class="chip">SQL</span>
+              <span class="chip">Apache Spark</span>
+              <span class="chip">Airflow</span>
+              <span class="chip">Kafka</span>
+              <span class="chip">MongoDB</span>
+              <span class="chip">Power BI</span>
+              <span class="chip">Tableau</span>
+            </div>
           </div>
-        </div>
 
-        <!-- Scrollable project list -->
-        <div class="project-list">
-          <!-- iBrand -->
-          <article class="project-card" data-tags="ai">
-            <h3>iBrand – Real-Time Content Automation Platform</h3>
-            <p class="project-meta">
-              Kafka · Spark · Airflow · MongoDB · FastAPI · Docker
-            </p>
-            <p><strong>Problem.</strong> Brands struggle to keep up with real-time news and social trends while maintaining a consistent tone of voice.</p>
-            <p><strong>What I did.</strong> Co-designed a pipeline that ingests articles from multiple news and social sources, streams the data via Kafka, processes it with Spark, enriches it with NLP signals and stores it in MongoDB for fast querying.</p>
-            <p><strong>Result.</strong> Enabled automated, brand-aligned social content generation on top of clean, queryable article data, reducing manual research time for marketers.</p>
-          </article>
+          <div class="info-block">
+            <h2 class="info-heading">interests</h2>
+            <div class="chip-row">
+              <span class="chip">Data storytelling</span>
+              <span class="chip">Dashboards</span>
+              <span class="chip">Automation</span>
+              <span class="chip">IoT</span>
+              <span class="chip">ML &amp; analytics</span>
+            </div>
+          </div>
+        </aside>
 
-          <!-- AI Property Deal Finder -->
-          <article class="project-card" data-tags="ai">
-            <h3>AI-Driven Property Deal Finder</h3>
-            <p class="project-meta">
-              Python · Airflow · AWS · XGBoost · SHAP · FastAPI · Twilio
-            </p>
-            <p><strong>Problem.</strong> Realtors needed a way to spot under-priced properties in a noisy, fast-moving Canadian housing market.</p>
-            <p><strong>What I did.</strong> Built a workflow that aggregates listing data, trains a regression model (XGBoost) to estimate fair price, explains model behaviour with SHAP and sends SMS alerts via Twilio when prices look anomalously low.</p>
-            <p><strong>Result.</strong> Helped identify potential deals by flagging listings priced significantly below the model’s predicted value, giving realtors a faster starting shortlist.</p>
-          </article>
+        <!-- RIGHT COLUMN: Projects -->
+        <section class="projects-column">
+          <div class="projects-header">
+            <div>
+              <h2>Selected projects</h2>
+              <p class="projects-intro">
+                A few places where I’ve applied data engineering, analytics and AI
+                to solve real problems.
+              </p>
+            </div>
 
-          <!-- Example dashboard project (you can edit or delete later) -->
-          <!--
-          <article class="project-card" data-tags="dashboards">
-            <h3>Sales Performance Dashboard</h3>
-            <p class="project-meta">
-              Power BI · DAX · SQL
-            </p>
-            <p>Short description here…</p>
-          </article>
-          -->
-        </div>
+            <!-- Category subtabs -->
+            <div class="project-filters">
+              <button class="filter-tab active" data-filter="all">All projects</button>
+              <button class="filter-tab" data-filter="dashboards">Dashboards</button>
+              <button class="filter-tab" data-filter="ai">AI</button>
+            </div>
+          </div>
 
-        <!-- Shown only when a filter has no projects -->
-        <p class="empty-state" id="emptyState">No projects in this category yet.</p>
+          <!-- Scrollable project list -->
+          <div class="project-list">
+            <!-- iBrand -->
+            <article class="project-card" data-tags="ai">
+              <h3>iBrand – Real-Time Content Automation Platform</h3>
+              <p class="project-meta">
+                Kafka · Spark · Airflow · MongoDB · FastAPI · Docker
+              </p>
+              <p><strong>Problem.</strong> Brands struggle to keep up with real-time news and social trends while maintaining a consistent tone of voice.</p>
+              <p><strong>What I did.</strong> Co-designed a pipeline that ingests articles from multiple news and social sources, streams the data via Kafka, processes it with Spark, enriches it with NLP signals and stores it in MongoDB for fast querying.</p>
+              <p><strong>Result.</strong> Enabled automated, brand-aligned social content generation on top of clean, queryable article data, reducing manual research time for marketers.</p>
+            </article>
+
+            <!-- AI Property Deal Finder -->
+            <article class="project-card" data-tags="ai">
+              <h3>AI-Driven Property Deal Finder</h3>
+              <p class="project-meta">
+                Python · Airflow · AWS · XGBoost · SHAP · FastAPI · Twilio
+              </p>
+              <p><strong>Problem.</strong> Realtors needed a way to spot under-priced properties in a noisy, fast-moving Canadian housing market.</p>
+              <p><strong>What I did.</strong> Built a workflow that aggregates listing data, trains a regression model (XGBoost) to estimate fair price, explains model behaviour with SHAP and sends SMS alerts via Twilio when prices look anomalously low.</p>
+              <p><strong>Result.</strong> Helped identify potential deals by flagging listings priced significantly below the model’s predicted value, giving realtors a faster starting shortlist.</p>
+            </article>
+
+            <!-- Later you can add dashboard projects like this:
+            <article class="project-card" data-tags="dashboards">
+              <h3>Sales Performance Dashboard</h3>
+              <p class="project-meta">Power BI · DAX · SQL</p>
+              <p>Short description here…</p>
+            </article>
+            -->
+          </div>
+
+          <!-- Shown only when a filter has no projects -->
+          <p class="empty-state" id="emptyState">No projects in this category yet.</p>
+        </section>
 
       </div>
     </section>
 
   </main>
 
+  <!-- ============== FILTER SCRIPT ============== -->
   <script>
-    // Filter logic for All / Dashboards / AI
     const filterTabs = document.querySelectorAll('.filter-tab');
     const projectCards = document.querySelectorAll('.project-card');
     const emptyState = document.getElementById('emptyState');

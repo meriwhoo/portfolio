@@ -1,8 +1,8 @@
 /* ============== Base ============== */
 
 :root {
-  /* Vibrant but still clean */
-  --hero-bg: #ffd84d;        /* bright yellow (poster vibe) */
+  /* Vibrant poster-like palette */
+  --hero-bg: #ffd84d;        /* bright yellow */
   --bg-page: #fffdf6;        /* very light warm */
   --bg-projects: #ffffff;
   --text-main: #111111;
@@ -26,8 +26,8 @@ body {
 }
 
 body {
-  font-family: "Montserrat", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
-    sans-serif;
+  font-family: "Montserrat", system-ui, -apple-system, BlinkMacSystemFont,
+    "Segoe UI", sans-serif;
   background: var(--bg-page);
   color: var(--text-main);
   line-height: 1.6;
@@ -146,11 +146,94 @@ body {
   color: #000;
 }
 
-/* ============== Projects ============== */
+/* ============== Info + Projects layout ============== */
 
 .projects-section {
   background: var(--bg-projects);
   padding: 3rem 0 4rem;
+}
+
+.projects-layout {
+  display: grid;
+  grid-template-columns: minmax(0, 1.1fr) minmax(0, 1.7fr);
+  gap: 3rem;
+  align-items: flex-start;
+}
+
+/* LEFT column */
+
+.info-column {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.info-block {
+  border-top: 1px solid var(--border-subtle);
+  padding-top: 1rem;
+}
+
+.info-heading {
+  font-size: 0.95rem;
+  text-transform: lowercase;
+  letter-spacing: 0.16em;
+  margin: 0 0 0.7rem;
+}
+
+.info-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  font-size: 0.9rem;
+}
+
+.info-list li {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 0.4rem;
+}
+
+.info-list a {
+  color: var(--text-main);
+  text-decoration: none;
+}
+
+.info-list a:hover {
+  text-decoration: underline;
+}
+
+.bullet {
+  width: 6px;
+  height: 6px;
+  border-radius: 999px;
+  background: #000;
+}
+
+/* Chips */
+
+.chip-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+}
+
+.chip {
+  padding: 0.25rem 0.6rem;
+  border-radius: 999px;
+  background: var(--chip-bg);
+  border: 1px solid #000;
+  font-size: 0.75rem;
+}
+
+/* RIGHT column: projects */
+
+.projects-column {
+  border-radius: 1.2rem;
+  border: 1px solid var(--border-subtle);
+  padding: 1.5rem 1.7rem 1.6rem;
+  box-shadow: var(--shadow-soft);
+  background: #ffffff;
 }
 
 .projects-header {
@@ -158,19 +241,18 @@ body {
   justify-content: space-between;
   gap: 2rem;
   align-items: flex-end;
+  padding-bottom: 1.1rem;
   border-bottom: 1px solid var(--border-subtle);
-  padding-bottom: 1.4rem;
-  margin-bottom: 1.6rem;
 }
 
-.projects-section h2 {
-  font-size: 1.4rem;
-  margin: 0 0 0.6rem;
+.projects-column h2 {
+  font-size: 1.25rem;
+  margin: 0 0 0.4rem;
 }
 
 .projects-intro {
   margin: 0;
-  font-size: 0.95rem;
+  font-size: 0.9rem;
   color: var(--text-muted);
 }
 
@@ -186,8 +268,9 @@ body {
   border-radius: 999px;
   border: 1px solid #000;
   background: #fff9da;
-  font-size: 0.8rem;
+  font-size: 0.78rem;
   cursor: pointer;
+  white-space: nowrap;
 }
 
 .filter-tab.active {
@@ -199,17 +282,14 @@ body {
 
 .project-list {
   margin-top: 1.2rem;
-  border-radius: 1.1rem;
-  border: 1px solid var(--border-subtle);
-  padding: 1.4rem 1.6rem;
-  max-height: 460px;        /* scroll area height */
+  max-height: 420px;      /* scroll area */
   overflow-y: auto;
   display: flex;
   flex-direction: column;
   gap: 1.1rem;
 }
 
-/* Optional nicer scrollbar (desktop only) */
+/* nicer scrollbar */
 .project-list::-webkit-scrollbar {
   width: 6px;
 }
@@ -228,7 +308,7 @@ body {
   border-radius: 0.9rem;
   background: #ffffff;
   box-shadow: 0 8px 18px rgba(0, 0, 0, 0.06);
-  font-size: 0.95rem;
+  font-size: 0.92rem;
   color: var(--text-muted);
 }
 
@@ -263,6 +343,18 @@ body {
 
   .hero-photo-card {
     max-width: 260px;
+  }
+
+  .projects-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .projects-column {
+    order: 2;
+  }
+
+  .info-column {
+    order: 1;
   }
 
   .projects-header {
